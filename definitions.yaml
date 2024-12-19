@@ -138,7 +138,7 @@ hierarchy:
   - NeedName: Delivery Metrics
     Definition: Key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed. These metrics provide insights into delivery efficiency, predictability, and capacity to deliver value. The team can identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making data-driven decisions to improve delivery performance.
 
-- name: Effective ownership
+- name: Effective Ownership
   description: >-
     What does the team need to effectively own and operate
     services already in production, regardless of new
@@ -202,6 +202,7 @@ hierarchy:
 
   - NeedName: Career Growth
     Definition: My product team provides ample opportunities for career growth and professional development. There is a mix of junior and senior talent on the team. Everyday pairing and coaching on specialised areas avoid key person dependencies. The team and company encourage continuous learning, supports skill enhancement, and provides access to training resources and mentorship programs. Regular performance evaluations and constructive feedback help identify areas for improvement and define career paths.
+
 - name: Flow
   description: >-
     What does the team need for a thriving innovation culture
