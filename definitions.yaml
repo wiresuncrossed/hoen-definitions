@@ -34,13 +34,19 @@ hierarchy:
   
   - NeedName: Data & Storage
     Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
-    Value: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability. The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services.
-    Indicators: The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
-  
+    Value: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability.
+    Indicators: >-
+      The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services. 
+      The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
+
   - NeedName: Version Control
-    Definition: The consistent creation and maintenance of repositories, teams, projects and permissions for code repositories.
-    Value: Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes. Clear association between repository, team and any deployed assets and overall project status.
-    Indicators: There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases. The removal of permissions for ex employees and contractors is automated
+    Definition: New repositories, teams and projects and permissions are created in a consistent way.
+    Value: >-
+      Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes.
+      Clear association between repository, team and any deployed assets and overall project status.
+    Indicators: >-
+      There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases.
+      The removal of permissions for ex employees and contractors is automated
   
   - NeedName: Production Environments
     Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
@@ -54,7 +60,7 @@ hierarchy:
   
   - NeedName: Operating Rhythms
     Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
-    Value: Foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, quality of service and productivity.
+    Value: Regular team meetings, stand-ups, and planning sessions foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, maintaining quality of service and improving efficiencies. There is Organisation level visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
     Indicators: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
   
   - NeedName: Permissions & Identity
@@ -70,7 +76,20 @@ hierarchy:
   - NeedName: Compute
     Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
     Value: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
-    Indicators: Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency. Proactive management of minimum OS and runtime versions to avoid running non supported versions or dependencies in production.
+    Indicators: >-
+      Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
+      Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production. 
+
+  - NeedName: Cloud Accounts & IO
+    Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
+    Value: ""
+    Indicators: >-
+      Accounts created with consistent virtual networks for deployed assets and across accounts.
+
+  - NeedName: Gateways & Web Delivery
+    Definition: The api gateways and web delivery mechanisms (e.g. CDNs) employed in my project ensure efficient and reliable communication between various services for internal and external traffic.
+    Value: These gateways provide a unified entry point, handle routing and load balancing, and ensure secure and optimised data transmission. With robust web delivery mechanisms, the project team can achieve high availability, scalability, and fault tolerance, delivering a seamless user experience and enabling effective integration with external systems.
+    Indicators: Examples are present as API Gateways, Azure API Management, Cloudflare, Fastly, Akamai, Cloudfront, Kong, NGINX.
 
 - name: Managed Work
   description: >
