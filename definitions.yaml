@@ -1,0 +1,98 @@
+hierarchy:
+- name: Basic Needs
+  description: >-
+    What does any team, regardless of age and stage, need to build an application and deploy changes to it?<br /><br />
+    From People and purpose to Computing and a Backlog, all software projects need fundamental things in place for the team to succeed.<br /><br /> 
+    The more the group meets these needs in a self-service experience, the more successful the outcome.<br /><br />
+
+  needs:
+  - NeedName: People & Purpose
+    Definition: >-
+      Enough team members to meet the ownership and delivery expectations on them.
+    Value: The project's vision and objectives are clearly communicated, creating a sense of shared purpose, motivation and cohesion among team members and leadership
+    Indicators: I feel connected to the purpose and goals of the project I am working on.
+
+  - NeedName: Technical capability
+    Definition: The team’s technical capabilities align well with the requirements of the project. Team members can complete daily activities confidently.
+    Value: They have a solid understanding of the technologies, frameworks and tools that are utilised, allowing them to design and develop robust solutions efficiently.
+    Indicators: Most people can pick up most work on the team. They regularly pair-program to help with productivity and building experience.
+  
+  - NeedName: Environment Management
+    Definition: Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, data sets/data generation, dependency management and configuration, mocks, data generation, short-lived environments.
+    Value: Real dependencies, similar/same technically to production. Composable environments. Setting up and managing different environment for my project is efficient and cheap.
+    Indicators: An environment for every change change.
+  
+  - NeedName: Work Backlog
+    Definition: With a well-maintained backlog, the project team can effectively plan, estimate, and track progress, ensuring a steady flow of value delivery.
+    Value: Prioritization reflects a balance of business, value, customer value, team productivity and service performance.
+    Indicators: The work backlog for my project is well-organized and prioritized. The backlog items are appropriately sized, ensuring efficient planning and task allocation.
+  
+  - NeedName: Data & Storage
+    Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
+    Value: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability. The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services.
+    Indicators: The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
+  
+  - NeedName: Version Control
+    Definition: The consistent creation and maintenance of repositories, teams, projects and permissions for code repositories.
+    Value: Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes. Clear association between repository, team and any deployed assets and overall project status.
+    Indicators: There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases. The removal of permissions for ex employees and contractors is automated
+  
+  - NeedName: Production Environments
+    Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
+    Value: Production Environment ensures a seamless user experience and customer satisfaction by providing a reliable software deployment platform.
+    Indicators: Optimised and managed for high performance, scalability and availability. The team can quickly access production log files and data to assist with troubleshooting issues.
+  
+  - NeedName: Observability
+    Definition: Ability to debug, troubleshoot and <b>monitor normal and abnormal</b> system behaviour. Curated patterns and tooling for the collection, storage, querying and aggregation of system data
+    Value: It provides comprehensive visibility into the system's health, performance, and logs, allowing for timely detection and resolution of issues.
+    Indicators: An opinionated operational health dashboard
+  
+  - NeedName: Operating Rhythms
+    Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
+    Value: Foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, quality of service and productivity.
+    Indicators: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
+  
+  - NeedName: Permissions & Identity
+    Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for.
+    Value: Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows.
+    Indicators: The ability to script user generation or resets to help with integration test automation.
+  
+  - NeedName: Local Dev + IDE
+    Definition: Highly automated opinionated setup process gives developers a consistent baseline setup to support build, test and run activities for the primary services they work on. Service-specific local setup (e.g. install dependencies, mocks, test data). Related to environment management.
+    Value: Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and associated licenses are readily available.
+    Indicators: IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at machine or repository level.
+  
+  - NeedName: Compute
+    Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
+    Value: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
+    Indicators: Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency. Proactive management of minimum OS and runtime versions to avoid running non supported versions or dependencies in production.
+
+- name: Flow
+  description: >
+    What does the team need for a thriving innovation culture while enjoying high throughput and Industry leading quality of service?<br /><br />
+    Maturity here is marked by being able to work productively over long periods while maintaining, if not increasing, customer trust.<br /><br />
+    Governance and controls for security, privacy, cost, and disaster recovery are in place and regularly exercised.<br /><br />
+    Teams have enough space to run multiple experiments in parallel and proactively learn about system behaviour through chaos engineering.<br /><br />
+    Hackathons and Game days foster innovation by quickly acting on ideas discovered.<br /><br />
+
+  needs:
+    - NeedName: Value & Trust, Mastery
+      Definition: Fostering a culture of delivering value and building trust, the team prioritises customer needs and consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous learning and professional development, ensuring expertise in their respective fields. This combination drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a competitive edge.
+      Value:
+      Indicators:
+
+
+    - NeedName: Governance & DR
+      Definition: The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations. Wherever possible, these controls are automated into the Engineering activities. The team proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their business continuity commitments. Annual audits do not interrupt the team's regular work.
+      Value:
+      Indicators:
+
+    - NeedName:   Hypothesis Driven
+      Definition: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
+      Value:
+      Indicators:
+
+    - NeedName: Chaos / Game Days
+      Definition: My product team regularly conducts chaos/game days to proactively test and validate the system's resilience and readiness for unexpected scenarios. During chaos/game days, the team simulates real-world failure scenarios, such as service outages or network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident response processes. By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness, improve incident response capabilities, and enhance overall system reliability.
+      Value:
+      Indicators:
