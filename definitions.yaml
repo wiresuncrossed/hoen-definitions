@@ -1,246 +1,301 @@
 hierarchy:
-- name: Basic Needs
-  description: >-
-    What does any team, regardless of age and stage,
-    need to build an application and deploy changes to it?<br /><br />
+  levels:
+  - level: 1
+    name: Basic Needs
+    description: >-
+      What does any team, regardless of age and stage,
+      need to build an application and deploy changes to it?<br /><br />
 
-    From People and purpose to Computing and a Backlog,
-    all software projects need fundamental things in place
-    for the team to succeed.<br /><br />
+      From People and purpose to Computing and a Backlog,
+      all software projects need fundamental things in place
+      for the team to succeed.<br /><br />
+      
+      The more the group meets these needs in a self-service
+      experience, the more successful the outcome.
+    needs:
+    - ID: L1N1
+      Name: People & Purpose
+      Definition: Enough team members to meet the ownership and delivery expectations on them.
+      Purpose: The project's vision and objectives are clearly communicated, creating a sense of shared purpose, motivation and cohesion among team members and leadership.
+      Indicators: I feel connected to the purpose and goals of the project I am working on.
+    - ID: L1N2
+      Name: Technical capability
+      Definition: The team's technical capabilities align well with the requirements of the project. Team members can complete daily activities confidently.
+      Purpose: They have a solid understanding of the technologies, frameworks and tools that are utilised, allowing them to design and develop robust solutions efficiently.
+      Indicators: Most people can pick up most work on the team. They regularly pair-program to help with productivity and building experience.
+    - ID: L1N3
+      Name: Environment Management
+      Definition: Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, data sets/data generation, dependency management and configuration, mocks, data generation, short-lived environments.
+      Purpose: Real dependencies, similar/same technically to production. Composable environments. Setting up and managing different environment for my project is efficient and cheap.
+      Indicators: An environment for every change change.
+    - ID: L1N4
+      Name: Work Backlog
+      Definition: With a well-maintained backlog, the project team can effectively plan, estimate, and track progress, ensuring a steady flow of value delivery.
+      Purpose: Prioritization reflects a balance of business, value, customer value, team productivity and service performance.
+      Indicators: The work backlog for my project is well-organized and prioritized. The backlog items are appropriately sized, ensuring efficient planning and task allocation.
+    - ID: L1N5
+      Name: Data & Storage
+      Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
+      Purpose: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability.
+      Indicators: >-
+        The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services. 
+        The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
+    - ID: L1N6
+      Name: Version Control
+      Definition: New repositories, teams and projects and permissions are created in a consistent way.
+      Purpose: >-
+        Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes.
+        Clear association between repository, team and any deployed assets and overall project status.
+      Indicators: >-
+    - ID: L1N7
+      Name: Production Environments
+      Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
+      Purpose: Production Environment ensures a seamless user experience and customer satisfaction by providing a reliable software deployment platform.
+      Indicators: Optimised and managed for high performance, scalability and availability. The team can quickly access production log files and data to assist with troubleshooting issues.
+    - ID: L1N8
+      Name: Observability
+      Definition: Ability to debug, troubleshoot and <b>monitor normal and abnormal</b> system behaviour. Curated patterns and tooling for the collection, storage, querying and aggregation of system data
+      Purpose: It provides comprehensive visibility into the system's health, performance, and logs, allowing for timely detection and resolution of issues.
+      Indicators: An opinionated operational health dashboard
+    - ID: L1N9
+      Name: Operating Rhythms
+      Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
+      Purpose: Regular team meetings, stand-ups, and planning sessions foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, maintaining quality of service and improving efficiencies. There is Organisation level visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
+      Indicators: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
+    - ID: L1N10
+      Name: Permissions & Identity
+      Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for.
+      Purpose: Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows.
+      Indicators: The ability to script user generation or resets to help with integration test automation.
+    - ID: L1N11
+      Name: Local Dev + IDE
+      Definition: Highly automated opinionated setup process gives developers a consistent baseline setup to support build, test and run activities for the primary services they work on. Service-specific local setup (e.g. install dependencies, mocks, test data). Related to environment management.
+      Purpose: Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and associated licenses are readily available.
+      Indicators: IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at machine or repository level.
+    - ID: L1N12
+      Name: Compute
+      Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
+      Purpose: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
+      Indicators: >-
+        Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
+        Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production. 
+    - ID: L1N13
+      Name: Cloud Accounts & IO
+      Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
+      Purpose: ""
+      Indicators: >-
+        Accounts created with consistent virtual networks for deployed assets and across accounts.
+    - ID: L1N14
+      Name: Gateways & Web Delivery
+      Definition: The api gateways and web delivery mechanisms (e.g. CDNs) employed in my project ensure efficient and reliable communication between various services for internal and external traffic.
+      Purpose: These gateways provide a unified entry point, handle routing and load balancing, and ensure secure and optimised data transmission. With robust web delivery mechanisms, the project team can achieve high availability, scalability, and fault tolerance, delivering a seamless user experience and enabling effective integration with external systems.
+      Indicators: Examples are present as API Gateways, Azure API Management, Cloudflare, Fastly, Akamai, Cloudfront, Kong, NGINX.
+
+  - level: 2
+    name: Managed Work
+    description: >
+      What does the team need to make work repeatable and have
+      controls to verify the quality and efficiency of new work?<br /><br />
+
+      The team has begun to agree on standard technical practices.
+      Documentation and information on components and their operational
+      routines are accurate and familiar.<br /><br />
+
+      Deployment solutions automate the orchestration of quality and
+      compliance checks. The team can invest in controls and tooling
+      for the early warning of failures and abnormalities.<br /><br /> 
+
+      Delivery and flow efficiency metrics highlight opportunities
+      for relative improvement within the group.
+
+    needs:
+    - ID: L2N1
+      Name: Information Management
+      Definition: The team maintains a consistent repository of information on component ownership, support routines, team composition and solution architecture. The information is accessible across the organisation to support efficient onboarding, communication and incident management across teams. All deployed infrastructure is identifiable to the component and associated team level.
+      Purpose: To ensure consistent and accessible documentation of system components and team responsibilities, facilitating efficient operations and knowledge sharing.
+      Indicators: The team maintains a consistent repository of information on component ownership, support routines, team composition and solution architecture. The information is accessible across the organisation to support efficient onboarding, communication and incident management across teams. All deployed infrastructure is identifiable to the component and associated team level.
+    - ID: L2N2
+      Name: Standards Compliance
+      Definition: The combined organisation obligations (e.g. audit, regulations) and agreed best practices are documented, transparent and respected by teams. There is a process to propose and accept changes to established standards. The level of compliance with standards is visible across the organisation.
+      Purpose: To ensure that teams adhere to established standards and regulations, promoting transparency and accountability.
+      Indicators: The combined organisation obligations (e.g. audit, regulations) and agreed best practices are documented, transparent and respected by teams. There is a process to propose and accept changes to established standards. The level of compliance with standards is visible across the organisation.
+    - ID: L2N3
+      Name: On-call
+      Definition: The on-call process is well-structured and familiar to all team members. The appropriate people are available and contacted promptly to respond to alerts or incidents. Escalation paths are known and used. Expectations with responders are clear and respected for out-of-hours and holiday periods. Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
+      Purpose: To ensure that the team has a structured and familiar on-call process, enabling timely response to alerts or incidents.
+      Indicators: The on-call process is well-structured and familiar to all team members. The appropriate people are available and contacted promptly to respond to alerts or incidents. Escalation paths are known and used. Expectations with responders are clear and respected for out-of-hours and holiday periods. Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
+    - ID: L2N4
+      Name: Quality Engineering
+      Definition: The tools and practices teams use to validate changes early and throughout the development lifecycle continuously. The management of quality ensures controls are trusted and highly automated. It is familiar and routine to maintain unit, contract and integration testing. Core workflows for each service are continually tested in production.
+      Purpose: To ensure that the team uses reliable and efficient tools and practices to validate changes early and throughout the development lifecycle, promoting high-quality outcomes and continuous improvement.
+      Indicators: The tools and practices teams use to validate changes early and throughout the development lifecycle continuously. The management of quality ensures controls are trusted and highly automated. It is familiar and routine to maintain unit, contract and integration testing. Core workflows for each service are continually tested in production.
+    - ID: L2N5
+      Name: Security Controls
+      Definition: Tests and security controls are followed throughout the development lifecycle (design, build and run) to help identify potential security issues. The security review process does not slow down the development process for the primary systems the team works on. The team understands their security posture and manages new issues in consultation with experts or a supporting team.
+      Purpose: To ensure that the team implements effective security controls throughout the development lifecycle, protecting the product and its data from potential security threats.
+      Indicators: Tests and security controls are followed throughout the development lifecycle (design, build and run) to help identify potential security issues. The security review process does not slow down the development process for the primary systems the team works on. The team understands their security posture and manages new issues in consultation with experts or a supporting team.
+    - ID: L2N6
+      Name: Alerting
+      Definition: The team has implemented an intelligent alerting mechanism that monitors key metrics in agreed thresholds across request rates, errors and latency. Scheduled tests regularly check the primary service flows or user actions for availability. When detecting abnormal system behaviour, the team is alerted before the customer or stakeholder reports an issue.
+      Purpose: To ensure timely detection and response to abnormal system behaviour, preventing potential issues from escalating.
+      Indicators: The team has implemented an intelligent alerting mechanism that monitors key metrics in agreed thresholds across request rates, errors and latency. Scheduled tests regularly check the primary service flows or user actions for availability. When detecting abnormal system behaviour, the team is alerted before the customer or stakeholder reports an issue.
+    - ID: L2N7
+      Name: Deployment Solutions
+      Definition: For each component type the team supports, there is a standard workflow to build, test, publish artefacts and deploy new versions. Build pipelines are highly automated, including promoting successful builds across environments. The deployment solution also orchestrates supporting automation for infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain common build steps inherited across all builds (e.g., publishing, tagging, static analysis). Build capacity and speed is high enough to keep wait times under [10] minutes.
+      Purpose: To ensure efficient and reliable deployment of new versions of components, promoting high-quality outcomes and continuous improvement.
+      Indicators: For each component type the team supports, there is a standard workflow to build, test, publish artefacts and deploy new versions. Build pipelines are highly automated, including promoting successful builds across environments. The deployment solution also orchestrates supporting automation for infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain common build steps inherited across all builds (e.g., publishing, tagging, static analysis). Build capacity and speed is high enough to keep wait times under [10] minutes.
+    - ID: L2N8
+      Name: Artifact Management
+      Definition: There is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation. Artefacts include versioned binaries, library feeds (e.g. npm, NuGet, Maven), container images and non-sensitive configuration files. The solution supports high availability and durability. The team publishes logs and test artefacts according to their audit requirements.
+      Purpose: To ensure that there is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation, promoting high-quality outcomes and continuous improvement.
+      Indicators: There is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation. Artefacts include versioned binaries, library feeds (e.g. npm, NuGet, Maven), container images and non-sensitive configuration files. The solution supports high availability and durability. The team publishes logs and test artefacts according to their audit requirements.
+    - ID: L2N9
+      Name: Infrastructure as Code
+      Definition: Infrastructure configurations are defined in code, enabling version control, reproducibility, and automated provisioning. The team manages workload infrastructure creation, configuration, maintenance and deletion through source code change control. Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
+      Purpose: To ensure that infrastructure configurations are defined in code, promoting version control, reproducibility, and automated provisioning.
+      Indicators: Infrastructure configurations are defined in code, enabling version control, reproducibility, and automated provisioning. The team manages workload infrastructure creation, configuration, maintenance and deletion through source code change control. Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
+    - ID: L2N10
+      Name: Delivery Metrics
+      Definition: Key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed. These metrics provide insights into delivery efficiency, predictability, and capacity to deliver value. The team can identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making data-driven decisions to improve delivery performance.
+      Purpose: To ensure that key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed, providing insights into delivery efficiency, predictability, and capacity to deliver value.
+      Indicators: Key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed. These metrics provide insights into delivery efficiency, predictability, and capacity to deliver value. The team can identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making data-driven decisions to improve delivery performance.
+
+  - level: 3
+    name: Effective Ownership
+    description: >-
+      What does the team need to effectively own and operate
+      services already in production, regardless of new
+      development work on those services?<br /><br />
+
+      The team has codified the creation of new services to
+      their agreed standards. Compliance controls are managed
+      and verifiable through change control. Quality of service
+      is monitored, reviewed, and managed proactively.
+
+    needs:
+    - ID: L3N1
+      Name: Templates & Golden Paths
+      Definition: A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent implementation of best practices across our common component types. Component / Project templates implement blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine templates into workflows to scaffold, build, test and deploy new services in hours.
+      Purpose: To ensure that the team has a comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent implementation of best practices across common component types.
+      Indicators: A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent implementation of best practices across common component types. Component / Project templates implement blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine templates into workflows to scaffold, build, test and deploy new services in hours.
+    - ID: L3N2
+      Name: Continuous Integration
+      Definition: All code changes are continually merged to the main branch (trunk/master) several times a day. Test-driven development (TDD) and behavior-driven development (BDD) practices are diligently followed by all team members. TDD ensures that tests are written before the code, promoting a thorough understanding of requirements and facilitating comprehensive test coverage. BDD focuses on defining system behavior through scenarios and specifications, improving collaboration between stakeholders and developers. The team may also practice Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices.
+      Purpose: To ensure that all code changes are continually merged to the main branch (trunk/master) several times a day, promoting a thorough understanding of requirements and facilitating comprehensive test coverage.
+      Indicators: All code changes are continually merged to the main branch (trunk/master) several times a day. Test-driven development (TDD) and behavior-driven development (BDD) practices are diligently followed by all team members. TDD ensures that tests are written before the code, promoting a thorough understanding of requirements and facilitating comprehensive test coverage. BDD focuses on defining system behavior through scenarios and specifications, improving collaboration between stakeholders and developers. The team may also practice Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices.
+    - ID: L3N3
+      Name: Compliance as Code
+      Definition: My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during the development and deployment process. By treating compliance as code, the team can efficiently implement and maintain compliance controls, reducing human error, enhancing auditability, and minimising the time and effort required to maintain regulatory compliance.
+      Purpose: To ensure that the team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to regulatory standards.
+      Indicators: My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during the development and deployment process. By treating compliance as code, the team can efficiently implement and maintain compliance controls, reducing human error, enhancing auditability, and minimising the time and effort required to maintain regulatory compliance.
+    - ID: L3N4
+      Name: Incident Mgmt
+      Definition: The incident management process on my product is robust and well-structured, enabling swift response and minimising the impact of incidents. The team follows established incident response procedures, including incident identification, communication, prioritisation, and resolution. Clear roles and responsibilities are defined, ensuring effective coordination and collaboration during incident handling.
+      Purpose: To ensure that the incident management process on my product is robust and well-structured, enabling swift response and minimising the impact of incidents.
+      Indicators: The incident management process on my product is robust and well-structured, enabling swift response and minimising the impact of incidents. The team follows established incident response procedures, including incident identification, communication, prioritisation, and resolution. Clear roles and responsibilities are defined, ensuring effective coordination and collaboration during incident handling.
+    - ID: L3N5
+      Name: SLIs, SLOs
+      Definition: There are clear service level objectives (SLOs) and service level indicators (SLIs) that help measure performance, ensuring the product consistently meets the defined quality and reliability standards. These SLOs and SLIs define synthetic tests of primary workflows and key metrics, such as response time, availability, and error rates, enabling the team to monitor and continuously improve the product's performance against established benchmarks and commitments made to customers.
+      Purpose: To ensure that there are clear service level objectives (SLOs) and service level indicators (SLIs) that help measure performance, ensuring the product consistently meets the defined quality and reliability standards.
+      Indicators: There are clear service level objectives (SLOs) and service level indicators (SLIs) that help measure performance, ensuring the product consistently meets the defined quality and reliability standards. These SLOs and SLIs define synthetic tests of primary workflows and key metrics, such as response time, availability, and error rates, enabling the team to monitor and continuously improve the product's performance against established benchmarks and commitments made to customers.
+    - ID: L3N6
+      Name: APIs & SDKs
+      Definition: The team provides well-designed APIs and software development kits (SDKs) that facilitate integration and extensibility. The APIs offer clear documentation, well-defined contracts, and consistent interfaces, enabling seamless interaction with the product's services and functionalities. The SDKs provide comprehensive tooling, libraries, and code examples, simplifying the development process for external and internal consumers. Internal publishers support fake or mock implementations of their APIs to help consuming teams automate testing.
+      Purpose: To ensure that the team provides well-designed APIs and software development kits (SDKs) that facilitate integration and extensibility.
+      Indicators: The team provides well-designed APIs and software development kits (SDKs) that facilitate integration and extensibility. The APIs offer clear documentation, well-defined contracts, and consistent interfaces, enabling seamless interaction with the product's services and functionalities. The SDKs provide comprehensive tooling, libraries, and code examples, simplifying the development process for external and internal consumers. Internal publishers support fake or mock implementations of their APIs to help consuming teams automate testing.
+    - ID: L3N7
+      Name: Eventing
+      Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for. Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows. The ability to script user generation or resets to help with integration test automation.
+      Purpose: To ensure that the team provides support for social logins, single sign-on, account verification and suspension, and the ability to script user generation or resets to help with integration test automation.
+      Indicators: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for. Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows. The ability to script user generation or resets to help with integration test automation.
+    - ID: L3N8
+      Name: Static Analysis
+      Definition: The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities, and maintain code quality standards. These tools automatically analyse code, check for common programming errors, and enforce coding conventions. Tools run locally and as part of automated builds to detect and resolve new issues as early as possible. Data on software composition & supply chain is available centrally to manage licensing and security vulnerability risk.
+      Purpose: To ensure that the team integrates static analysis tools that effectively identify code issues, potential vulnerabilities, and maintain code quality standards.
+      Indicators: The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities, and maintain code quality standards. These tools automatically analyse code, check for common programming errors, and enforce coding conventions. Tools run locally and as part of automated builds to detect and resolve new issues as early as possible. Data on software composition & supply chain is available centrally to manage licensing and security vulnerability risk.
+
+  - level: 4
+    name: Sustainability
+    description: >
+      What does the team need to grow and mature on
+      a yearly level?<br /><br />
+
+      Technical practices have made continuous deployment
+      to production a norm.<br /><br />
+
+      The engineering team focus more on customer product
+      metrics than on Engineering constraints.<br /><br />
+      
+      Experimentation techniques are embedded for both
+      technical de-risking and customer behaviour hypotheses.
+      The team enjoys a diversity of Engineering talent
+      and experience.
     
-    The more the group meets these needs in a self-service
-    experience, the more successful the outcome.
+    needs:
+    - ID: L4N1
+      Name: Continuous Deployment
+      Definition: Building on continuous Integration, all successfully builds are automatically promoted and deployed to production. The team is likely practicing Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices. Changes are implemented with the intention it will be deployed directly to production. High degree of release controls (e.g. feature flags, experiments) ensure it's safe to deploy partially implemented features. High maturity of SLO and alerting to detect and revert problem changes.
+      Purpose: To ensure that all successfully builds are automatically promoted and deployed to production, promoting high-quality outcomes and continuous improvement.
+      Indicators: Building on continuous Integration, all successfully builds are automatically promoted and deployed to production. The team is likely practicing Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices. Changes are implemented with the intention it will be deployed directly to production. High degree of release controls (e.g. feature flags, experiments) ensure it's safe to deploy partially implemented features. High maturity of SLO and alerting to detect and revert problem changes.
+    - ID: L4N2
+      Name: Product Metrics
+      Definition: The team effectively captures and analyses product performance metrics, enabling data-driven decision-making and continuous product improvement. The team can independently form and test a new hypothesis using standard user event capture, aggregation and visualisation tools. User events and flows are well-documented and accessible to all teams. Event processing filters activity from automated testing.
+      Purpose: To ensure that the team effectively captures and analyses product performance metrics, enabling data-driven decision-making and continuous product improvement.
+      Indicators: The team effectively captures and analyses product performance metrics, enabling data-driven decision-making and continuous product improvement. The team can independently form and test a new hypothesis using standard user event capture, aggregation and visualisation tools. User events and flows are well-documented and accessible to all teams. Event processing filters activity from automated testing.
+    - ID: L4N3
+      Name: Experimentation
+      Definition: Team actively promotes a culture of experimentation to support both hypothesis-driven development and technical risk management. The team conducts controlled experiments, A/B tests, and user research to validate assumptions, gather feedback, and inform decision-making. The team can run multiple experiments in parallel. Significant system changes can be safely tested in production.
+      Purpose: To ensure that the team actively promotes a culture of experimentation to support both hypothesis-driven development and technical risk management.
+      Indicators: Team actively promotes a culture of experimentation to support both hypothesis-driven development and technical risk management. The team conducts controlled experiments, A/B tests, and user research to validate assumptions, gather feedback, and inform decision-making. The team can run multiple experiments in parallel. Significant system changes can be safely tested in production.
+    - ID: L4N4
+      Name: Career Growth
+      Definition: My product team provides ample opportunities for career growth and professional development. There is a mix of junior and senior talent on the team. Everyday pairing and coaching on specialised areas avoid key person dependencies. The team and company encourage continuous learning, supports skill enhancement, and provides access to training resources and mentorship programs. Regular performance evaluations and constructive feedback help identify areas for improvement and define career paths.
+      Purpose: To ensure that my product team provides ample opportunities for career growth and professional development.
+      Indicators: My product team provides ample opportunities for career growth and professional development. There is a mix of junior and senior talent on the team. Everyday pairing and coaching on specialised areas avoid key person dependencies. The team and company encourage continuous learning, supports skill enhancement, and provides access to training resources and mentorship programs. Regular performance evaluations and constructive feedback help identify areas for improvement and define career paths.
 
-  needs:
-  - NeedName: People & Purpose
-    Definition: Enough team members to meet the ownership and delivery expectations on them.
-    Value: The project's vision and objectives are clearly communicated, creating a sense of shared purpose, motivation and cohesion among team members and leadership
-    Indicators: I feel connected to the purpose and goals of the project I am working on.
+  - level: 5
+    name: Flow
+    Definition: What does the team need for a thriving innovation culture while enjoying high throughput and Industry leading quality of service? Maturity here is marked by being able to work productively over long periods while maintaining, if not increasing, customer trust. Governance and controls for security, privacy, cost, and disaster recovery are in place and regularly exercised. Teams have enough space to run multiple experiments in parallel and proactively learn about system behaviour through chaos engineering. Hackathons and Game days foster innovation by quickly acting on ideas discovered.
+    description: >-
+      What does the team need for a thriving innovation culture
+      while enjoying high throughput and Industry leading
+      quality of service?<br /><br />
 
-  - NeedName: Technical capability
-    Definition: The team's technical capabilities align well with the requirements of the project. Team members can complete daily activities confidently.
-    Value: They have a solid understanding of the technologies, frameworks and tools that are utilised, allowing them to design and develop robust solutions efficiently.
-    Indicators: Most people can pick up most work on the team. They regularly pair-program to help with productivity and building experience.
-  
-  - NeedName: Environment Management
-    Definition: Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, data sets/data generation, dependency management and configuration, mocks, data generation, short-lived environments.
-    Value: Real dependencies, similar/same technically to production. Composable environments. Setting up and managing different environment for my project is efficient and cheap.
-    Indicators: An environment for every change change.
-  
-  - NeedName: Work Backlog
-    Definition: With a well-maintained backlog, the project team can effectively plan, estimate, and track progress, ensuring a steady flow of value delivery.
-    Value: Prioritization reflects a balance of business, value, customer value, team productivity and service performance.
-    Indicators: The work backlog for my project is well-organized and prioritized. The backlog items are appropriately sized, ensuring efficient planning and task allocation.
-  
-  - NeedName: Data & Storage
-    Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
-    Value: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability.
-    Indicators: >-
-      The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services. 
-      The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
+      Maturity here is marked by being able to work productively
+      over long periods while maintaining, if not increasing,
+      customer trust.<br /><br />
 
-  - NeedName: Version Control
-    Definition: New repositories, teams and projects and permissions are created in a consistent way.
-    Value: >-
-      Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes.
-      Clear association between repository, team and any deployed assets and overall project status.
-    Indicators: >-
-      There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases.
-      The removal of permissions for ex employees and contractors is automated
-  
-  - NeedName: Production Environments
-    Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
-    Value: Production Environment ensures a seamless user experience and customer satisfaction by providing a reliable software deployment platform.
-    Indicators: Optimised and managed for high performance, scalability and availability. The team can quickly access production log files and data to assist with troubleshooting issues.
-  
-  - NeedName: Observability
-    Definition: Ability to debug, troubleshoot and <b>monitor normal and abnormal</b> system behaviour. Curated patterns and tooling for the collection, storage, querying and aggregation of system data
-    Value: It provides comprehensive visibility into the system's health, performance, and logs, allowing for timely detection and resolution of issues.
-    Indicators: An opinionated operational health dashboard
-  
-  - NeedName: Operating Rhythms
-    Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
-    Value: Regular team meetings, stand-ups, and planning sessions foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, maintaining quality of service and improving efficiencies. There is Organisation level visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
-    Indicators: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
-  
-  - NeedName: Permissions & Identity
-    Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for.
-    Value: Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows.
-    Indicators: The ability to script user generation or resets to help with integration test automation.
-  
-  - NeedName: Local Dev + IDE
-    Definition: Highly automated opinionated setup process gives developers a consistent baseline setup to support build, test and run activities for the primary services they work on. Service-specific local setup (e.g. install dependencies, mocks, test data). Related to environment management.
-    Value: Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and associated licenses are readily available.
-    Indicators: IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at machine or repository level.
-  
-  - NeedName: Compute
-    Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
-    Value: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
-    Indicators: >-
-      Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
-      Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production. 
+      Governance and controls for security, privacy, cost, and
+      disaster recovery are in place and regularly exercised.<br /><br />
+      
+      Teams have enough space to run multiple experiments in parallel
+      and proactively learn about system behaviour through
+      chaos engineering.<br /><br />
 
-  - NeedName: Cloud Accounts & IO
-    Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
-    Value: ""
-    Indicators: >-
-      Accounts created with consistent virtual networks for deployed assets and across accounts.
+      Hackathons and Game days foster innovation by quickly acting
+      on ideas discovered.<br /><br />
 
-  - NeedName: Gateways & Web Delivery
-    Definition: The api gateways and web delivery mechanisms (e.g. CDNs) employed in my project ensure efficient and reliable communication between various services for internal and external traffic.
-    Value: These gateways provide a unified entry point, handle routing and load balancing, and ensure secure and optimised data transmission. With robust web delivery mechanisms, the project team can achieve high availability, scalability, and fault tolerance, delivering a seamless user experience and enabling effective integration with external systems.
-    Indicators: Examples are present as API Gateways, Azure API Management, Cloudflare, Fastly, Akamai, Cloudfront, Kong, NGINX.
+    needs:  
+      - ID: L5N1
+        Name: Value & Trust, Mastery
+        Definition: Fostering a culture of delivering value and building trust, the team prioritises customer needs and consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous learning and professional development, ensuring expertise in their respective fields. This combination drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a competitive edge.
+        Purpose: To ensure that the team fosters a culture of delivering value and building trust, prioritising customer needs and consistently delivering reliable outcomes.
+        Indicators: Fostering a culture of delivering value and building trust, the team prioritises customer needs and consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous learning and professional development, ensuring expertise in their respective fields. This combination drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a competitive edge.
 
-- name: Managed Work
-  description: >
-    What does the team need to make work repeatable and have
-    controls to verify the quality and efficiency of new work?<br /><br />
+      - ID: L5N2
+        Name: Governance & DR
+        Definition: The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations. Wherever possible, these controls are automated into the Engineering activities. The team proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their business continuity commitments. Annual audits do not interrupt the team's regular work.
+        Purpose: To ensure that the team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations.
+        Indicators: The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations. Wherever possible, these controls are automated into the Engineering activities. The team proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their business continuity commitments. Annual audits do not interrupt the team's regular work.
 
-    The team has begun to agree on standard technical practices.
-    Documentation and information on components and their operational
-    routines are accurate and familiar.<br /><br />
+      - ID: L5N3
+        Name:   Hypothesis Driven
+        Definition: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
+        Purpose: To ensure that my product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions.
+        Indicators: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
 
-    Deployment solutions automate the orchestration of quality and
-    compliance checks. The team can invest in controls and tooling
-    for the early warning of failures and abnormalities.<br /><br /> 
-
-    Delivery and flow efficiency metrics highlight opportunities
-    for relative improvement within the group.
-
-  needs:
-  - NeedName: Information Management
-    Definition: The team maintains a consistent repository of information on component ownership, support routines, team composition and solution architecture. The information is accessible across the organisation to support efficient onboarding, communication and incident management across teams. All deployed infrastructure is identifiable to the component and associated team level.
-
-  - NeedName: Standards Compliance
-    Definition: The combined organisation obligations (e.g. audit, regulations) and agreed best practices are documented, transparent and respected by teams. There is a process to propose and accept changes to established standards. The level of compliance with standards is visible across the organisation.
-
-  - NeedName: On-call
-    Definition: The on-call process is well-structured and familiar to all team members. The appropriate people are available and contacted promptly to respond to alerts or incidents. Escalation paths are known and used. Expectations with responders are clear and respected for out-of-hours and holiday periods. Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
-
-  - NeedName: Quality Engineering
-    Definition: The tools and practices teams use to validate changes early and throughout the development lifecycle continuously. The management of quality ensures controls are trusted and highly automated. It is familiar and routine to maintain unit, contract and integration testing. Core workflows for each service are continually tested in production.
-
-  - NeedName: Security Controls
-    Definition: Tests and security controls are followed throughout the development lifecycle (design, build and run) to help identify potential security issues. The security review process does not slow down the development process for the primary systems the team works on. The team understands their security posture and manages new issues in consultation with experts or a supporting team.
-
-  - NeedName: Alerting
-    Definition: The team has implemented an intelligent alerting mechanism that monitors key metrics in agreed thresholds across request rates, errors and latency. Scheduled tests regularly check the primary service flows or user actions for availability. When detecting abnormal system behaviour, the team is alerted before the customer or stakeholder reports an issue.
-
-  - NeedName: Deployment Solutions
-    Definition: For each component type the team supports, there is a standard workflow to build, test, publish artefacts and deploy new versions. Build pipelines are highly automated, including promoting successful builds across environments. The deployment solution also orchestrates supporting automation for infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain common build steps inherited across all builds (e.g., publishing, tagging, static analysis). Build capacity and speed is high enough to keep wait times under [10] minutes.
-
-  - NeedName: Artifact Management
-    Definition: There is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation. Artefacts include versioned binaries, library feeds (e.g. npm, NuGet, Maven), container images and non-sensitive configuration files. The solution supports high availability and durability. The team publishes logs and test artefacts according to their audit requirements.
-
-  - NeedName: Infrastructure as Code
-    Definition: Infrastructure configurations are defined in code, enabling version control, reproducibility, and automated provisioning. The team manages workload infrastructure creation, configuration, maintenance and deletion through source code change control. Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
-
-  - NeedName: Delivery Metrics
-    Definition: Key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed. These metrics provide insights into delivery efficiency, predictability, and capacity to deliver value. The team can identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making data-driven decisions to improve delivery performance.
-
-- name: Effective Ownership
-  description: >-
-    What does the team need to effectively own and operate
-    services already in production, regardless of new
-    development work on those services?<br /><br />
-
-    The team has codified the creation of new services to
-    their agreed standards. Compliance controls are managed
-    and verifiable through change control. Quality of service
-    is monitored, reviewed, and managed proactively.
-
-  needs:
-  - NeedName: Templates & Golden Paths
-    Definition: A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent implementation of best practices across our common component types. Component / Project templates implement blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine templates into workflows to scaffold, build, test and deploy new services in hours.
-
-  - NeedName: Continuous Integration
-    Definition: All code changes are continually merged to the main branch (trunk/master) several times a day. Test-driven development (TDD) and behavior-driven development (BDD) practices are diligently followed by all team members. TDD ensures that tests are written before the code, promoting a thorough understanding of requirements and facilitating comprehensive test coverage. BDD focuses on defining system behavior through scenarios and specifications, improving collaboration between stakeholders and developers. The team may also practice Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices.
-
-  - NeedName: Compliance as Code
-    Definition: My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during the development and deployment process. By treating compliance as code, the team can efficiently implement and maintain compliance controls, reducing human error, enhancing auditability, and minimising the time and effort required to maintain regulatory compliance.
-
-  - NeedName: Incident Mgmt
-    Definition: The incident management process on my product is robust and well-structured, enabling swift response and minimising the impact of incidents. The team follows established incident response procedures, including incident identification, communication, prioritisation, and resolution. Clear roles and responsibilities are defined, ensuring effective coordination and collaboration during incident handling.
-
-  - NeedName: SLIs, SLOs
-    Definition: There are clear service level objectives (SLOs) and service level indicators (SLIs) that help measure performance, ensuring the product consistently meets the defined quality and reliability standards. These SLOs and SLIs define synthetic tests of primary workflows and key metrics, such as response time, availability, and error rates, enabling the team to monitor and continuously improve the product's performance against established benchmarks and commitments made to customers.
-
-  - NeedName: APIs & SDKs
-    Definition: The team provides well-designed APIs and software development kits (SDKs) that facilitate integration and extensibility. The APIs offer clear documentation, well-defined contracts, and consistent interfaces, enabling seamless interaction with the product's services and functionalities. The SDKs provide comprehensive tooling, libraries, and code examples, simplifying the development process for external and internal consumers. Internal publishers support fake or mock implementations of their APIs to help consuming teams automate testing.
-
-  - NeedName: Eventing
-    Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for. Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows. The ability to script user generation or resets to help with integration test automation.
-
-  - NeedName: Static Analysis
-    Definition: The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities, and maintain code quality standards. These tools automatically analyse code, check for common programming errors, and enforce coding conventions. Tools run locally and as part of automated builds to detect and resolve new issues as early as possible. Data on software composition & supply chain is available centrally to manage licensing and security vulnerability risk.
-
-- name: Sustainability
-  description: >-
-    What does the team need to grow and mature on
-    a yearly level?<br /><br />
-
-    Technical practices have made continuous deployment
-    to production a norm.<br /><br />
-
-    The engineering team focus more on customer product
-    metrics than on Engineering constraints.<br /><br />
-    
-    Experimentation techniques are embedded for both
-    technical de-risking and customer behaviour hypotheses.
-    The team enjoys a diversity of Engineering talent
-    and experience.
-  
-  needs:
-  - NeedName: Continuous Deployment
-    Definition: Building on continuous Integration, all successfully builds are automatically promoted and deployed to production. The team is likely practicing Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices. Changes are implemented with the intention it will be deployed directly to production. High degree of release controls (e.g. feature flags, experiments) ensure it's safe to deploy partially implemented features. High maturity of SLO and alerting to detect and revert problem changes.
-
-  - NeedName: Product Metrics
-    Definition: The team effectively captures and analyses product performance metrics, enabling data-driven decision-making and continuous product improvement. The team can independently form and test a new hypothesis using standard user event capture, aggregation and visualisation tools. User events and flows are well-documented and accessible to all teams. Event processing filters activity from automated testing.
-
-  - NeedName: Experimentation
-    Definition: Team actively promotes a culture of experimentation to support both hypothesis-driven development and technical risk management. The team conducts controlled experiments, A/B tests, and user research to validate assumptions, gather feedback, and inform decision-making. The team can run multiple experiments in parallel. Significant system changes can be safely tested in production.
-
-  - NeedName: Career Growth
-    Definition: My product team provides ample opportunities for career growth and professional development. There is a mix of junior and senior talent on the team. Everyday pairing and coaching on specialised areas avoid key person dependencies. The team and company encourage continuous learning, supports skill enhancement, and provides access to training resources and mentorship programs. Regular performance evaluations and constructive feedback help identify areas for improvement and define career paths.
-
-- name: Flow
-  description: >-
-    What does the team need for a thriving innovation culture
-    while enjoying high throughput and Industry leading
-    quality of service?<br /><br />
-
-    Maturity here is marked by being able to work productively
-    over long periods while maintaining, if not increasing,
-    customer trust.<br /><br />
-
-    Governance and controls for security, privacy, cost, and
-    disaster recovery are in place and regularly exercised.<br /><br />
-    
-    Teams have enough space to run multiple experiments in parallel
-    and proactively learn about system behaviour through
-    chaos engineering.<br /><br />
-
-    Hackathons and Game days foster innovation by quickly acting
-    on ideas discovered.<br /><br />
-
-  needs:
-    - NeedName: Value & Trust, Mastery
-      Definition: Fostering a culture of delivering value and building trust, the team prioritises customer needs and consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous learning and professional development, ensuring expertise in their respective fields. This combination drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a competitive edge.
-      Value:
-      Indicators:
-
-
-    - NeedName: Governance & DR
-      Definition: The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations. Wherever possible, these controls are automated into the Engineering activities. The team proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their business continuity commitments. Annual audits do not interrupt the team's regular work.
-      Value:
-      Indicators:
-
-    - NeedName:   Hypothesis Driven
-      Definition: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
-      Value:
-      Indicators:
-
-    - NeedName: Chaos / Game Days
-      Definition: My product team regularly conducts chaos/game days to proactively test and validate the system's resilience and readiness for unexpected scenarios. During chaos/game days, the team simulates real-world failure scenarios, such as service outages or network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident response processes. By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness, improve incident response capabilities, and enhance overall system reliability.
-      Value:
-      Indicators:
+      - ID: L5N4
+        Name: Chaos / Game Days
+        Definition: My product team regularly conducts chaos/game days to proactively test and validate the system's resilience and readiness for unexpected scenarios. During chaos/game days, the team simulates real-world failure scenarios, such as service outages or network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident response processes. By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness, improve incident response capabilities, and enhance overall system reliability.
+        Purpose: To ensure that my product team regularly conducts chaos/game days to proactively test and validate the system's resilience and readiness for unexpected scenarios.
+        Indicators: My product team regularly conducts chaos/game days to proactively test and validate the system's resilience and readiness for unexpected scenarios. During chaos/game days, the team simulates real-world failure scenarios, such as service outages or network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident response processes. By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness, improve incident response capabilities, and enhance overall system reliability.

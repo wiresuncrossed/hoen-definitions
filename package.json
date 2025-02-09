@@ -1,0 +1,34 @@
+{
+  "name": "hoen-definitions",
+  "version": "7.0.0",
+  "description": "Definitions for the Hierarchy of Engineering Needs. see [engineeringneeds.io](https://engineeringneeds.io)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll --watchPathIgnorePatterns node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiresuncrossed/hoen-definitions.git"
+  },
+  "keywords": [
+    "hoen"
+  ],
+  "author": "{  \"author\": \"Wires Uncrossed <contact@wiresuncrossed.com> (https://wiresuncrossed.com)",
+  "contributors": [
+    "Wires Uncrossed <contact@wiresuncrossed.co.nz> (https://wiresuncrossed.co.nz)",
+    "TODO: Add induvudal contributors"
+  ],
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/wiresuncrossed/hoen-definitions/issues"
+  },
+  "homepage": "https://github.com/wiresuncrossed/hoen-definitions#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "ajv": "^8.12.0"
+  },
+  "dependencies": {    
+  }
+}
