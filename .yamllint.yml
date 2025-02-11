@@ -1,0 +1,5 @@
+extends: default
+
+rules:
+  line-length:
+    max: 1000  # 0 means no limit

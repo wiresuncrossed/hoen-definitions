@@ -20,22 +20,22 @@ hierarchy:
     Definition: The team's technical capabilities align well with the requirements of the project. Team members can complete daily activities confidently.
     Value: They have a solid understanding of the technologies, frameworks and tools that are utilised, allowing them to design and develop robust solutions efficiently.
     Indicators: Most people can pick up most work on the team. They regularly pair-program to help with productivity and building experience.
-  
+
   - NeedName: Environment Management
     Definition: Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, data sets/data generation, dependency management and configuration, mocks, data generation, short-lived environments.
     Value: Real dependencies, similar/same technically to production. Composable environments. Setting up and managing different environment for my project is efficient and cheap.
     Indicators: An environment for every change change.
-  
+
   - NeedName: Work Backlog
     Definition: With a well-maintained backlog, the project team can effectively plan, estimate, and track progress, ensuring a steady flow of value delivery.
     Value: Prioritization reflects a balance of business, value, customer value, team productivity and service performance.
     Indicators: The work backlog for my project is well-organized and prioritized. The backlog items are appropriately sized, ensuring efficient planning and task allocation.
-  
+
   - NeedName: Data & Storage
     Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
     Value: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability.
     Indicators: >-
-      The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services. 
+      The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services.
       The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
 
   - NeedName: Version Control
@@ -46,38 +46,38 @@ hierarchy:
     Indicators: >-
       There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases.
       The removal of permissions for ex employees and contractors is automated
-  
+
   - NeedName: Production Environments
     Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
     Value: Production Environment ensures a seamless user experience and customer satisfaction by providing a reliable software deployment platform.
     Indicators: Optimised and managed for high performance, scalability and availability. The team can quickly access production log files and data to assist with troubleshooting issues.
-  
+
   - NeedName: Observability
     Definition: Ability to debug, troubleshoot and <b>monitor normal and abnormal</b> system behaviour. Curated patterns and tooling for the collection, storage, querying and aggregation of system data
     Value: It provides comprehensive visibility into the system's health, performance, and logs, allowing for timely detection and resolution of issues.
     Indicators: An opinionated operational health dashboard
-  
+
   - NeedName: Operating Rhythms
     Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
     Value: Regular team meetings, stand-ups, and planning sessions foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, maintaining quality of service and improving efficiencies. There is Organisation level visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
     Indicators: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
-  
+
   - NeedName: Permissions & Identity
     Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for.
     Value: Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows.
     Indicators: The ability to script user generation or resets to help with integration test automation.
-  
+
   - NeedName: Local Dev + IDE
     Definition: Highly automated opinionated setup process gives developers a consistent baseline setup to support build, test and run activities for the primary services they work on. Service-specific local setup (e.g. install dependencies, mocks, test data). Related to environment management.
     Value: Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and associated licenses are readily available.
     Indicators: IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at machine or repository level.
-  
+
   - NeedName: Compute
     Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
     Value: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
     Indicators: >-
       Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
-      Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production. 
+      Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production.
 
   - NeedName: Cloud Accounts & IO
     Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
@@ -101,7 +101,7 @@ hierarchy:
 
     Deployment solutions automate the orchestration of quality and
     compliance checks. The team can invest in controls and tooling
-    for the early warning of failures and abnormalities.<br /><br /> 
+    for the early warning of failures and abnormalities.<br /><br />
 
     Delivery and flow efficiency metrics highlight opportunities
     for relative improvement within the group.
@@ -183,12 +183,12 @@ hierarchy:
 
     The engineering team focus more on customer product
     metrics than on Engineering constraints.<br /><br />
-    
+
     Experimentation techniques are embedded for both
     technical de-risking and customer behaviour hypotheses.
     The team enjoys a diversity of Engineering talent
     and experience.
-  
+
   needs:
   - NeedName: Continuous Deployment
     Definition: Building on continuous Integration, all successfully builds are automatically promoted and deployed to production. The team is likely practicing Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main is made safe with mature TDD and quality engineering practices. Changes are implemented with the intention it will be deployed directly to production. High degree of release controls (e.g. feature flags, experiments) ensure it's safe to deploy partially implemented features. High maturity of SLO and alerting to detect and revert problem changes.
@@ -214,7 +214,7 @@ hierarchy:
 
     Governance and controls for security, privacy, cost, and
     disaster recovery are in place and regularly exercised.<br /><br />
-    
+
     Teams have enough space to run multiple experiments in parallel
     and proactively learn about system behaviour through
     chaos engineering.<br /><br />
