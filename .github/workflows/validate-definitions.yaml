@@ -2,19 +2,27 @@ name: Validate Definitions
 
 on:
   pull_request:
-    branches:
-      - main
+    paths:
+      - 'definitions.yaml'
+  push:
+    paths:
+      - 'definitions.yaml'
 
 jobs:
-  validate:
+  yamllint:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Install YAML Linter
-        run: sudo apt-get install -y yamllint
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      - name: Validate definitions.yaml
-        run: yamllint definitions.yaml
+    - name: Install yamllint
+      run: pip install yamllint
+
+    - name: Run yamllint
+      run: yamllint -c .yamllint.yml definitions.yaml
