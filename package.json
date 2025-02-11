@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll --watchPathIgnorePatterns node_modules"
+    "test:watch": "jest --watchAll --watchPathIgnorePatterns node_modules",
+    "lint:yaml": "yamllint definitions.yaml",
+    "lint": "npm run lint:yaml"
   },
   "repository": {
     "type": "git",
