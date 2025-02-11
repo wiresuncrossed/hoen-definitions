@@ -1,3 +1,5 @@
+---
+
 hierarchy:
 - name: Basic Needs
   description: >-
@@ -234,7 +236,7 @@ hierarchy:
       Value:
       Indicators:
 
-    - NeedName:   Hypothesis Driven
+    - NeedName: Hypothesis Driven
       Definition: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
       Value:
       Indicators:
