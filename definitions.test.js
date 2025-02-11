@@ -38,7 +38,7 @@ const schema = {
                 minItems: 1,
                 items: {
                   type: 'object',
-                  required: ['ID', 'Name', 'Definition', 'Purpose'],
+                  required: ['ID', 'Name', 'Definition', 'Purpose', 'maturitySignals'],
                   properties: {
                     ID: {
                       type: 'string',
@@ -47,7 +47,7 @@ const schema = {
                     Name: { type: 'string' },
                     Definition: { type: 'string' },
                     Purpose: { type: 'string' },
-                    Indicators: { type: 'string' }
+                    maturitySignals: { type: 'string' }
                   }
                 }
               }
