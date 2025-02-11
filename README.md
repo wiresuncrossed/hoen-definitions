@@ -42,7 +42,7 @@ To get started with the Hoen Definitions project, follow these steps:
 3. **Validate Definitions**
    You can manually validate the `definitions.yaml` file using:
    ```bash
-   yamllint definitions.yaml
+   yamllint -c .yamllint.yml definitions.yaml
    ```
 
 ### Contributing
