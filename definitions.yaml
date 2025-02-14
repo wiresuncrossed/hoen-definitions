@@ -20,25 +20,25 @@ hierarchy:
           Definition: Enough team members to meet the ownership and delivery expectations on them.
           Purpose: The project's vision and objectives are clearly communicated, creating a sense of shared purpose, motivation and cohesion among team members and leadership.
           maturitySignals: I feel connected to the purpose and goals of the project I am working on.
-        
+
         - ID: L1N2
           Name: Technical capability
           Definition: The team's technical capabilities align well with the requirements of the project. Team members can complete daily activities confidently.
           Purpose: They have a solid understanding of the technologies, frameworks and tools that are utilised, allowing them to design and develop robust solutions efficiently.
           maturitySignals: Most people can pick up most work on the team. They regularly pair-program to help with productivity and building experience.
-        
+
         - ID: L1N3
           Name: Environment Management
           Definition: Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, data sets/data generation, dependency management and configuration, mocks, data generation, short-lived environments.
           Purpose: Real dependencies, similar/same technically to production. Composable environments. Setting up and managing different environment for my project is efficient and cheap.
           maturitySignals: An environment for every change change.
-        
+
         - ID: L1N4
           Name: Work Backlog
           Definition: With a well-maintained backlog, the project team can effectively plan, estimate, and track progress, ensuring a steady flow of value delivery.
           Purpose: Prioritization reflects a balance of business, value, customer value, team productivity and service performance.
           maturitySignals: The work backlog for my project is well-organized and prioritized. The backlog items are appropriately sized, ensuring efficient planning and task allocation.
-        
+
         - ID: L1N5
           Name: Data & Storage
           Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
@@ -46,7 +46,7 @@ hierarchy:
           maturitySignals: >-
             The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services.
             The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
-            
+
         - ID: L1N6
           Name: Version Control
           Definition: New repositories, teams and projects and permissions are created in a consistent way.
@@ -56,37 +56,37 @@ hierarchy:
           maturitySignals: >-
             There is guidance and examples on creation of repositories for internal only, internal + trusted partners, and open source use cases.
             The removal of permissions for ex employees and contractors is automated
-        
+
         - ID: L1N7
           Name: Production Environments
           Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
           Purpose: Production Environment ensures a seamless user experience and customer satisfaction by providing a reliable software deployment platform.
           maturitySignals: Optimised and managed for high performance, scalability and availability. The team can quickly access production log files and data to assist with troubleshooting issues.
-        
+
         - ID: L1N8
           Name: Observability
           Definition: Ability to debug, troubleshoot and <b>monitor normal and abnormal</b> system behaviour. Curated patterns and tooling for the collection, storage, querying and aggregation of system data
           Purpose: It provides comprehensive visibility into the system's health, performance, and logs, allowing for timely detection and resolution of issues.
           maturitySignals: An opinionated operational health dashboard
-        
+
         - ID: L1N9
           Name: Operating Rhythms
           Definition: The routines used by the team to manage delivery and operations. Planning on a daily, weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution, and knowledge sharing.
           Purpose: Regular team meetings, stand-ups, and planning sessions foster a shared understanding of priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings are sought, and the team is empowered to balance capacity investment across new feature delivery, maintaining quality of service and improving efficiencies. There is Organisation level visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
           maturitySignals: Familiar and effective ceremonies. There is Clear visibility on past and planned investments across new feature delivery, maintaining quality of service and improving productivity.
-        
+
         - ID: L1N10
           Name: Permissions & Identity
           Definition: The ability to create and manage accounts, credentials, roles and permissions for end users of the product or service the team is responsible for.
           Purpose: Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication flows.
           maturitySignals: The ability to script user generation or resets to help with integration test automation.
-        
+
         - ID: L1N11
           Name: Local Dev + IDE
           Definition: Highly automated opinionated setup process gives developers a consistent baseline setup to support build, test and run activities for the primary services they work on. Service-specific local setup (e.g. install dependencies, mocks, test data). Related to environment management.
           Purpose: Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and associated licenses are readily available.
           maturitySignals: IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at machine or repository level.
-        
+
         - ID: L1N12
           Name: Compute
           Definition: The allocated computational resources sufficiently meet the demands of my project, ensuring optimal performance and scalability without hindering productivity.
@@ -94,14 +94,14 @@ hierarchy:
           maturitySignals: >-
             Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
             Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production.
-        
+
         - ID: L1N13
           Name: Cloud Accounts & IO
           Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
           Purpose: ""
           maturitySignals: >-
             Accounts created with consistent virtual networks for deployed assets and across accounts.
-        
+
         - ID: L1N14
           Name: Gateways & Web Delivery
           Definition: The api gateways and web delivery mechanisms (e.g. CDNs) employed in my project ensure efficient and reliable communication between various services for internal and external traffic.
