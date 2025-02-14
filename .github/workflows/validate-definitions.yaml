@@ -21,8 +21,11 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install yamllint
-      run: pip install yamllint
+    - name: Install validation dependencies
+      run: pip install -r ./validation/requirements.txt
 
     - name: Run yamllint
       run: yamllint -c .yamllint.yml definitions.yaml
+
+    - name: Validate schema
+      run: python ./validation/validate_schema.py

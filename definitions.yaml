@@ -11,7 +11,7 @@ hierarchy:
       From People and purpose to Computing and a Backlog,
       all software projects need fundamental things in place
       for the team to succeed.<br /><br />
-      
+
       The more the group meets these needs in a self-service
       experience, the more successful the outcome.
     needs:
@@ -40,7 +40,7 @@ hierarchy:
       Definition: Familiar, fit-for-purpose data storage solutions are available to suit the organisation's obligations.
       Purpose: Opinionated self-service data solutions are available for the teams across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, and data durability.
       maturitySignals: >-
-        The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services. 
+        The mean-time-to-restore is known for its primary services. Sharding or partitioning policies support the scale and regional context of the services.
         The team can independently manage Data migrations and schema changes. There is up-to-date documentation of schemas and associated privacy or security classifications.
     - ID: L1N6
       Name: Version Control
@@ -48,7 +48,7 @@ hierarchy:
       Purpose: >-
         Clear guidance on branching strategies implemented at the organisation level. It is easy to track changes and support concurrent development and rollback changes.
         Clear association between repository, team and any deployed assets and overall project status.
-      maturitySignals: >-
+      maturitySignals:
     - ID: L1N7
       Name: Production Environments
       Definition: Trusted combined state of configuration, deployed artifact(s), infrastructure, runtimes, dependencies and access control.
@@ -80,7 +80,7 @@ hierarchy:
       Purpose: Self-service compute solutions available for the teams across VMs, containers, FaaS and edge workloads with opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling and serverless. Guidance and defaults in place for performance, reliability and availability of compute platforms.
       maturitySignals: >-
         Compute fleets are kept young and disposable through routine fleet management. Running instances, configured containers younger than two weeks to improve patching compliance and avoid stateful dependency
-        Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production. 
+        Proactive management of minimum OS and runtime versions to avoid running non supported versions of dependencies in production.
     - ID: L1N13
       Name: Cloud Accounts & IO
       Definition: Teams can create new cloud accounts to provision infrastructure and services related to a common domain. Fast automated creation and deletion of cloud accounts with consistent and compliant Identity and Access Management inherited from a centralised control pane.
@@ -105,7 +105,7 @@ hierarchy:
 
       Deployment solutions automate the orchestration of quality and
       compliance checks. The team can invest in controls and tooling
-      for the early warning of failures and abnormalities.<br /><br /> 
+      for the early warning of failures and abnormalities.<br /><br />
 
       Delivery and flow efficiency metrics highlight opportunities
       for relative improvement within the group.
@@ -227,7 +227,7 @@ hierarchy:
 
       The engineering team focus more on customer product
       metrics than on Engineering constraints.<br /><br />
-      
+
       Experimentation techniques are embedded for both
       technical de-risking and customer behaviour hypotheses.
       The team enjoys a diversity of Engineering talent
@@ -276,7 +276,7 @@ hierarchy:
       Hackathons and Game days foster innovation by quickly acting
       on ideas discovered.<br /><br />
 
-    needs:  
+    needs:
       - ID: L5N1
         Name: Value & Trust, Mastery
         Definition: Fostering a culture of delivering value and building trust, the team prioritises customer needs and consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous learning and professional development, ensuring expertise in their respective fields. This combination drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a competitive edge.
@@ -290,7 +290,7 @@ hierarchy:
         maturitySignals: The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and operations. Wherever possible, these controls are automated into the Engineering activities. The team proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their business continuity commitments. Annual audits do not interrupt the team's regular work.
 
       - ID: L5N3
-        Name:   Hypothesis Driven
+        Name: Hypothesis Driven
         Definition: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
         Purpose: To ensure that my product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions.
         maturitySignals: My product embraces a hypothesis-driven approach, where experiments and data analysis systematically test and validate assumptions. The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise initiatives, and drive innovation, creating more customer value.
