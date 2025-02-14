@@ -22,10 +22,13 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
+      working-directory: validation
       run: npm install
 
     - name: Run lint
+      working-directory: validation
       run: npm run lint
 
     - name: Run tests
+      working-directory: validation
       run: npm test
