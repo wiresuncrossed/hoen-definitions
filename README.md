@@ -1,6 +1,6 @@
 # Hierarchy of Engineering Needs - Definitions
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-![Validate definition](https://github.com/wiresuncrossed/hoen-definitions/actions/workflows/validate.yml/badge.svg)
+![Validate definition](https://github.com/wiresuncrossed/hoen-definitions/actions/workflows/validate.yaml/badge.svg)
 
 ## Purpose
 This repository is the main store of definitions and relationships
