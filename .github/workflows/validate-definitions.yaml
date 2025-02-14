@@ -1,0 +1,28 @@
+name: Validate Definitions
+
+on:
+  pull_request:
+    paths:
+      - 'definitions.yaml'
+  push:
+    paths:
+      - 'definitions.yaml'
+
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install yamllint
+      run: pip install yamllint
+
+    - name: Run yamllint
+      run: yamllint -c .yamllint.yml definitions.yaml
