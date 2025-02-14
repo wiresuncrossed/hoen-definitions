@@ -38,6 +38,8 @@ Thank you for considering contributing to the **Hierarchy of Engineering Needs**
 ### Format and Validity
 - Validate the YAML file using tools like `yamllint` or `prettier`.
 - Indent with **2 spaces** (or adjust per preference).
+- Remove trailing whitespaces
+- Ideally use `.editorconfig` compatible editor to enforce the above formatting rules automatically 
 - Ensure valid syntax and consistent key-value naming.
 
 ### Specificity of Changes
