@@ -30,7 +30,8 @@
                   "properties": {
                     "ID": {
                       "type": "string",
-                      "pattern": "^L[1-5]N\\d+$"
+                      "pattern": "^[1-5]-[a-z]+(-[a-z]+)*$",
+                      "description": "Need ID in format level-name-name (e.g., 1-people-purpose)"
                     },
                     "Name": { "type": "string" },
                     "Definition": { "type": "string" },

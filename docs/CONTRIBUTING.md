@@ -103,3 +103,31 @@ A maintainer will review your PR for:
 - **Consistency**: Maintain uniform terminology and formatting across all documentation.
 - **Agnostic**: Avoid references to specific tools, vendors, or technologies.
 
+## Development Setup
+
+### Pre-commit Validation Hook
+
+To ensure all changes meet our validation requirements, we use a pre-commit hook that runs the validation tests automatically before each commit. To set this up:
+
+1. Create a symlink to the pre-commit hook:
+   ```bash
+   ln -s ../../hooks/pre-commit .git/hooks/pre-commit
+   chmod +x .git/hooks/pre-commit
+   ```
+
+2. Install the validation dependencies:
+   ```bash
+   cd validation
+   npm install
+   ```
+
+The pre-commit hook will now run the validation tests before each commit. If the tests fail, the commit will be blocked until the issues are fixed.
+
+To run the validation tests manually:
+
+```bash
+cd validation
+npm test
+```
+
+This will run the validation tests and output the results. If any issues are found, you can fix them and re-run the tests until they pass.
