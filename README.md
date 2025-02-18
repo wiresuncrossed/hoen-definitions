@@ -13,7 +13,12 @@ Site and visualization repo:
 - https://github.com/wiresuncrossed/hierachy-of-engineering-needs.github.io
 
 ## Contributing
-If you wish to contribute, please follow our [contribution guide](./docs/CONTRIBUTING.md)
+
+We welcome contributions from the community! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
+
+## Contributors
+
+This project exists thanks to all the people who contribute. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for a full list of contributors who have helped shape this model through code, feedback, and real-world implementation experiences.
 
 ## License
 This work is licensed under a
