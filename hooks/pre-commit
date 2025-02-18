@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Change to the validation directory
+cd validation || exit 1
+
+# Run the validation tests
+npm test
+
+# Capture the exit code
+exit_code=$?
+
+# If the tests failed, prevent the commit
+if [ $exit_code -ne 0 ]; then
+  echo "❌ Validation tests failed. Please fix the errors before committing."
+  exit 1
+fi
+
+exit 0
