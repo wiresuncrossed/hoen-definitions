@@ -141,12 +141,12 @@ hierarchy:
           Definition: The on-call process is well-structured and familiar to all team members. The appropriate people are available and contacted promptly to respond to alerts or incidents. Escalation paths are known and used. Expectations with responders are clear and respected for out-of-hours and holiday periods. Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
           Purpose: To ensure that the team has a structured and familiar on-call process, enabling timely response to alerts or incidents.
           maturitySignals: The on-call process is well-structured and familiar to all team members. The appropriate people are available and contacted promptly to respond to alerts or incidents. Escalation paths are known and used. Expectations with responders are clear and respected for out-of-hours and holiday periods. Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
-        - ID: 2-quality
+        - ID: 2-quality-engineering
           Name: Quality Engineering
           Definition: The tools and practices teams use to validate changes early and throughout the development lifecycle continuously. The management of quality ensures controls are trusted and highly automated. It is familiar and routine to maintain unit, contract and integration testing. Core workflows for each service are continually tested in production.
           Purpose: To ensure that the team uses reliable and efficient tools and practices to validate changes early and throughout the development lifecycle, promoting high-quality outcomes and continuous improvement.
           maturitySignals: The tools and practices teams use to validate changes early and throughout the development lifecycle continuously. The management of quality ensures controls are trusted and highly automated. It is familiar and routine to maintain unit, contract and integration testing. Core workflows for each service are continually tested in production.
-        - ID: 2-security
+        - ID: 2-security-controls
           Name: Security Controls
           Definition: Tests and security controls are followed throughout the development lifecycle (design, build and run) to help identify potential security issues. The security review process does not slow down the development process for the primary systems the team works on. The team understands their security posture and manages new issues in consultation with experts or a supporting team.
           Purpose: To ensure that the team implements effective security controls throughout the development lifecycle, protecting the product and its data from potential security threats.
@@ -161,7 +161,7 @@ hierarchy:
           Definition: For each component type the team supports, there is a standard workflow to build, test, publish artefacts and deploy new versions. Build pipelines are highly automated, including promoting successful builds across environments. The deployment solution also orchestrates supporting automation for infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain common build steps inherited across all builds (e.g., publishing, tagging, static analysis). Build capacity and speed is high enough to keep wait times under [10] minutes.
           Purpose: To ensure efficient and reliable deployment of new versions of components, promoting high-quality outcomes and continuous improvement.
           maturitySignals: For each component type the team supports, there is a standard workflow to build, test, publish artefacts and deploy new versions. Build pipelines are highly automated, including promoting successful builds across environments. The deployment solution also orchestrates supporting automation for infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain common build steps inherited across all builds (e.g., publishing, tagging, static analysis). Build capacity and speed is high enough to keep wait times under [10] minutes.
-        - ID: 2-artifact-mgmt
+        - ID: 2-artifact-management
           Name: Artifact Management
           Definition: There is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation. Artefacts include versioned binaries, library feeds (e.g. npm, NuGet, Maven), container images and non-sensitive configuration files. The solution supports high availability and durability. The team publishes logs and test artefacts according to their audit requirements.
           Purpose: To ensure that there is a standard solution for hosting, managing and distributing binaries and artefacts across the organisation, promoting high-quality outcomes and continuous improvement.
@@ -171,7 +171,7 @@ hierarchy:
           Definition: Infrastructure configurations are defined in code, enabling version control, reproducibility, and automated provisioning. The team manages workload infrastructure creation, configuration, maintenance and deletion through source code change control. Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
           Purpose: To ensure that infrastructure configurations are defined in code, promoting version control, reproducibility, and automated provisioning.
           maturitySignals: Infrastructure configurations are defined in code, enabling version control, reproducibility, and automated provisioning. The team manages workload infrastructure creation, configuration, maintenance and deletion through source code change control. Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
-        - ID: 2-delivery-operations-metrics
+        - ID: 2-delivery-metrics
           Name: Delivery Metrics
           Definition: Key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed. These metrics provide insights into delivery efficiency, predictability, and capacity to deliver value. The team can identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making data-driven decisions to improve delivery performance.
           Purpose: To ensure that key metrics, such as lead time, cycle time, and throughput, are regularly monitored and reviewed, providing insights into delivery efficiency, predictability, and capacity to deliver value.
