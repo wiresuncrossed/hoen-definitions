@@ -1,92 +1,97 @@
 ---
 
-hierarchy:
+hierarchy:    
   levels:
     - level: 1
       name: Basic Needs
       description: >-
         What does any team, regardless of age and stage,
-        need to build an application and deploy changes to it?  
+        need to build an application and deploy changes to it?
         From People and purpose to Computing and a Backlog,
         all software projects need fundamental things in place
-        for the team to succeed.  
+        for the team to succeed.
         The more the group meets these needs in a self-service
         experience, the more successful the outcome.
       needs:
         - ID: 1-people-purpose
           Name: People & Purpose
-          Definition: >
+          Definition: >-
             Enough team members to meet the ownership and delivery expectations on them.
-          Purpose: >
-            The project's vision and objectives are clearly communicated, creating a sense of shared purpose, 
-            motivation and cohesion among team members and leadership.
-          maturitySignals: >
+          Purpose: >-
+            The project's vision and objectives are clearly communicated, creating a sense of
+            shared purpose, motivation and cohesion among team members and leadership.
+          maturitySignals: >-
             I feel connected to the purpose and goals of the project I am working on.
 
         - ID: 1-tech-capability
           Name: Technical capability
-          Definition: >
-            The team's technical capabilities align well with the requirements of the project. 
+          Definition: >-
+            The team's technical capabilities align well with the requirements of the project.
             Team members can complete daily activities confidently.
-          Purpose: >
-            Increased independence and confidence. A solid understanding of the technologies, 
-            frameworks and tools that are utilised, allowing them to design and develop 
+          Purpose: >-
+            Increased independence and confidence. A solid understanding of the technologies,
+            frameworks and tools that are utilised, allowing them to design and develop
             robust solutions efficiently.
-          maturitySignals: >
-            Most people can pick up most work on the team. They regularly pair-program to help 
+          maturitySignals: >-
+            Most people can pick up most work on the team. They regularly pair-program to help
             with productivity and building experience.
 
         - ID: 1-env-mgmt
           Name: Environment Management
-          Definition: >
-            Ability to test and debug changes in a <b>prod-like environment</b>, infrastructure-as-code, 
-            data sets/data generation, dependency management and configuration, mocks, data generation, 
-            short-lived environments.
-          Purpose: >
-            Real dependencies, similar/same technically to production. Composable environments. 
-            Setting up and managing different environments for my project is efficient and cheap.
-          maturitySignals: >
+          Definition: >-
+            Ability to test and debug changes in a <b>prod-like environment</b>,
+            infrastructure-as-code, data sets/data generation, dependency management
+            and configuration, mocks, data generation, short-lived environments.
+          Purpose: >-
+            Real dependencies, similar/same technically to production. Composable
+            environments. Setting up and managing different environments for my
+            project is efficient and cheap.
+          maturitySignals: >-
             An environment for every change.
 
         - ID: 1-work-backlog
           Name: Work Backlog
-          Definition: >
-            With a well-maintained backlog, the project team can effectively plan, estimate, 
-            and track progress, ensuring a steady flow of value delivery.
-          Purpose: >
-            Prioritization reflects a balance of business, value, customer value, team productivity 
-            and service performance.
-          maturitySignals: >
-            The work backlog for my project is well-organized and prioritized. The backlog items 
-            are appropriately sized, ensuring efficient planning and task allocation.
+          Definition: >-
+            With a well-maintained backlog, the project team can effectively plan,
+            estimate, and track progress, ensuring a steady flow of value delivery.
+          Purpose: >-
+            Prioritization reflects a balance of business, value, customer value,
+            team productivity and service performance.
+          maturitySignals: >-
+            The work backlog for my project is well-organized and prioritized.
+            The backlog items are appropriately sized, ensuring efficient planning
+            and task allocation.
 
         - ID: 1-data-storage
           Name: Data & Storage
-          Definition: >
-            Familiar, fit-for-purpose data storage solutions are available to suit the 
-            organisation's obligations.
-          Purpose: >
-            Opinionated self-service data solutions are available for the teams across SQL, NoSQL, 
-            Blob/Bucket and Caching. Guidance and defaults are in place for performance, reliability, 
-            and data durability.
+          Definition: >-
+            Familiar, fit-for-purpose data storage solutions are available to suit
+            the organisation's obligations.
+          Purpose: >-
+            Opinionated self-service data solutions are available for the teams
+            across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are
+            in place for performance, reliability, and data durability.
           maturitySignals: >-
-            The mean-time-to-restore is known for its primary services. Sharding or partitioning 
-            policies support the scale and regional context of the services.
-            The team can independently manage Data migrations and schema changes. There is up-to-date 
-            documentation of schemas and associated privacy or security classifications.
+            The mean-time-to-restore is known for its primary services. Sharding
+            or partitioning policies support the scale and regional context of
+            the services. The team can independently manage Data migrations and
+            schema changes. There is up-to-date documentation of schemas and
+            associated privacy or security classifications.
 
         - ID: 1-version-control
           Name: Version Control
-          Definition: >
-            New repositories, teams and projects and permissions are created in a consistent way.
+          Definition: >-
+            New repositories, teams and projects and permissions are created in
+            a consistent way.
           Purpose: >-
-            Clear guidance on branching strategies implemented at the organisation level. It is easy 
-            to track changes and support concurrent development and rollback changes.
-            Clear association between repository, team and any deployed assets and overall project status.
+            Clear guidance on branching strategies implemented at the organisation
+            level. It is easy to track changes and support concurrent development
+            and rollback changes. Clear association between repository, team and
+            any deployed assets and overall project status.
           maturitySignals: >-
-            There is guidance and examples on creation of repositories for internal only, internal + 
-            trusted partners, and open source use cases.
-            The removal of permissions for ex employees and contractors is automated
+            There is guidance and examples on creation of repositories for internal
+            only, internal + trusted partners, and open source use cases.
+            The removal of permissions for ex employees and contractors is automated.
 
         - ID: 1-prod-env
           Name: Production Environments
