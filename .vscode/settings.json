@@ -1,0 +1,22 @@
+{
+  "yaml.format.enable": true,
+  "yaml.validate": true,
+  "yaml.format.singleQuote": false,
+  "yaml.format.bracketSpacing": true,
+  "yaml.format.proseWrap": "preserve",
+  "yaml.format.printWidth": 120,
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [120]
+  },
+  "yaml.customTags": [],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*"
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [120]
+}
