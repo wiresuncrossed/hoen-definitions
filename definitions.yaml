@@ -388,7 +388,7 @@ hierarchy:
             Ensure main branch is always in a releaseable state. Forced automation of essential quality controls.
             Smaller batch sizes reduce the risk of integration issues.
           maturitySignals: >
-            Green-build confidence; Successful builds are safe deploy to production without further inspection.
+            Green-build confidence; Successful builds are safe to deploy to production without further inspection.
             At least one build per active contributor per day.
         - ID: 3-compliance-as-code
           Name: Compliance as Code
@@ -406,7 +406,7 @@ hierarchy:
             compliance requirements as code, automating compliance checks and ensuring adherence to regulatory
             standards.
         - ID: 3-incident-mgmt
-          Name: Incident Mgmt
+          Name: Incident Management
           Definition: >
             The incident management process on my product is robust and well-structured, enabling swift response and
             minimising the impact of incidents. The team follows established incident response procedures, including
