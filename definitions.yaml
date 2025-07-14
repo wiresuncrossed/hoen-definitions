@@ -27,39 +27,50 @@ hierarchy:
           Definition: >-
             The team's technical capabilities align well with the requirements of the project.
             Team members can complete daily activities confidently.
+            AI-assisted tools act as always available pair workers supporting coding, testing, and design activities.
+            These tools offer contextual code suggestions, surface relevant information, and help solve complex problems,
+            enabling team members to learn new technologies and confidently work with legacy systems.
           Purpose: >-
             Increased independence and confidence. A solid understanding of the technologies,
-            frameworks and tools that are utilised, allowing them to design and develop
+            frameworks, and tools that are utilised, allowing them to design and develop
             robust solutions efficiently.
           maturitySignals: >-
             Most people can pick up most work on the team. They regularly pair-program to help
-            with productivity and building experience.
+            with productivity and building experience. AI-assisted tools are part of the daily workflow,
+            providing contextual guidance, identifying issues early, summarising relevant documentation,
+            and assisting with legacy code comprehension. Engineers leverage AI to ramp up faster,
+            write better code, test more effectively, and solve harder problems with confidence.
 
         - ID: 1-env-mgmt
           Name: Environment Management
           Definition: >-
             Ability to test and debug changes in a <b>prod-like environment</b>,
             infrastructure-as-code, data sets/data generation, dependency management
-            and configuration, mocks, data generation, short-lived environments.
+            and configuration, mocks, data generation, short-lived environments. AI-assisted tools can generate and
+            anonymise test data, helping teams create realistic and compliant environments with minimal manual effort.
           Purpose: >-
             Real dependencies, similar/same technically to production. Composable
             environments. Setting up and managing different environments for my
             project is efficient and cheap.
           maturitySignals: >-
-            An environment for every change.
+            An environment for every change. Test data generation is streamlined using AI tools
+            that automate creation, anonymisation, and compliance checks.
 
         - ID: 1-work-backlog
           Name: Work Backlog
           Definition: >-
             With a well-maintained backlog, the project team can effectively plan,
-            estimate, and track progress, ensuring a steady flow of value delivery.
+            estimate, and track progress, ensuring a steady flow of value delivery. AI-assisted tools help
+            by extracting and refining requirements from documents or conversations,
+            analysing customer feedback at scale, and suggesting data informed prioritisation.
           Purpose: >-
-            Prioritization reflects a balance of business, value, customer value,
+            Prioritisation reflects a balance of business, value, customer value,
             team productivity and service performance.
           maturitySignals: >-
-            The work backlog for my project is well-organized and prioritized.
+            The work backlog for my project is well-organised and prioritised.
             The backlog items are appropriately sized, ensuring efficient planning
-            and task allocation.
+            and task allocation. AI is used to help analyse and prioritise backlog items
+            based on customer feedback, requirements, and historical delivery data.
 
         - ID: 1-data-storage
           Name: Data & Storage
@@ -149,13 +160,15 @@ hierarchy:
           Definition: >
             Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
             test and run activities for the primary services they work on. Service-specific local setup (e.g. install
-            dependencies, mocks, test data). Related to environment management.
+            dependencies, mocks, test data). Integrated AI in editors provides real-time code suggestions, early bug
+            detection, and style guidance, improving development speed, code quality, and consistency.
           Purpose: >
             Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
             associated licenses are readily available.
           maturitySignals: >
             IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at
-            machine or repository level.
+            machine or repository level. AI-assisted tools in the IDE are configured with codebase context rules and
+            routinely used to suggest code, detect issues and enforce style and architecture standards.
         - ID: 1-compute
           Name: Compute
           Definition: >
@@ -222,14 +235,16 @@ hierarchy:
             support routines, team composition and solution architecture. The information is
             accessible across the organisation to support efficient onboarding, communication
             and incident management across teams. All deployed infrastructure is identifiable
-            to the component and associated team level.
+            to the component and associated team level. AI tools help auto-generate and summarise documentation
+            from code, meetings, or incident reports, ensuring decisions and knowledge are captured clearly
+            and shared efficiently.
           Purpose: >
             To ensure consistent and accessible documentation of system components and team
             responsibilities, facilitating efficient operations and knowledge sharing.
           maturitySignals: >
             All codebases and deployed infrastructure are identifiable to the component and
-            associated team level.
-
+            associated team level. AI reduces the manual effort involved in keeping information accurate
+            and up-to-date.
         - ID: 2-standards
           Name: Standards Compliance
           Definition: >
@@ -242,7 +257,8 @@ hierarchy:
             transparency and accountability.
           maturitySignals: >
             The level of compliance with standards is visible to all stakeholders across
-            the organisation.
+            the organisation. AI-assisted documentation and knowledge summaries are routinely
+            used to maintain clarity and reduce information gaps.
 
         - ID: 2-on-call
           Name: On-call
@@ -262,39 +278,47 @@ hierarchy:
           Definition: >
             The tools and practices teams use to validate changes early and throughout the development lifecycle
             continuously. The management of quality ensures controls are trusted and highly automated. It is familiar
-            and routine to maintain unit, contract and integration testing.
+            and routine to maintain unit, contract and integration testing. AI-generated tests, risk based
+            prioritisation through analysis of historical data, and smart failure diagnosis improve test
+            reliability and reduce release blockers.
           Purpose: >
             Ensure main branch software is always in a releaseable state. Drive increasing automation of regression
             testing.
           maturitySignals: >
             Green builds are safe to release without further inspection. Core workflows for each service are
-            continually tested in production.
+            continually tested in production. AI is used to help prioritise testing, diagnose failures, and
+            maintain reliable, efficient quality controls.
         - ID: 2-security-controls
           Name: Security Controls
           Definition: >
             Tests and security controls are followed throughout the development lifecycle (design, build and run)
             to help identify potential security issues. The security review process does not slow down the development
             process for the primary systems the team works on. The team understands their security posture and
-            manages new issues in consultation with experts or a supporting team.
+            manages new issues in consultation with experts or a supporting team. AI continuously scans codebases and
+            infrastructure for vulnerabilities, flags policy violations, and supports compliance audits
+            with auto-generated evidence.
           Purpose: >
             To ensure that the team implements effective security controls throughout the development lifecycle,
             protecting the product and its data from potential security threats.
           maturitySignals: >
             The security review process does not slow down the development process.
             The team understands their security posture and manages new issues in consultation with experts or
-            a supporting team.
+            a supporting team. AI is actively used for vulnerability scanning, compliance
+            checks, and audit preparation.
         - ID: 2-alerting
           Name: Alerting
           Definition: >
             The team has implemented an intelligent alerting mechanism that monitors key metrics in agreed thresholds
             across request rates, errors and latency. Scheduled tests regularly check the primary service flows or user
             actions for availability. When detecting abnormal system behaviour, the team is alerted before the customer
-            or stakeholder reports an issue.
+            or stakeholder reports an issue. AI analyses logs to detect anomalies, reduce noise through smart grouping,
+            and propose likely root causes, shortening MTTD and MTTR.
           Purpose: >
             To ensure timely detection and response to abnormal system behaviour, preventing potential issues
             from escalating.
           maturitySignals: >-
             The team normally detect and raise an issue before the customer or stakeholder reports an issue.
+             AI-powered alerting tools support anomaly detection, root cause analysis and noise reduction.
         - ID: 2-deployment-solutions
           Name: Deployment Solutions
           Definition: >
@@ -366,13 +390,17 @@ hierarchy:
             A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent
             implementation of best practices across our common component types. Component / Project templates implement
             blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine
-            templates into workflows to scaffold, build, test and deploy new services in under an hour.
+            templates into workflows to scaffold, build, test and deploy new services in under an hour. AI can learn
+            from successful past projects and existing codebases to dynamically suggest or generate tailored
+            templates and golden paths, embedding best practices from inception and reducing boilerplate.
           Purpose: >
             Automated standardisation of agreed best practices and compliance across common component types.
+            AI helps tailor and evolve templates based on historical success patterns and emerging standards.
           maturitySignals: >
             New components or projects can be created and deployed to production in under an hour.
             Regular contributions to the shared templates and accelerators from Communities of Practice or
             specialist groups. It is easy to transfer ownership of components or projects between teams.
+            AI is used to assist in generating and evolving templates and golden paths.
         - ID: 3-continuous-integration
           Name: Continuous Integration
           Definition: >
@@ -383,13 +411,17 @@ hierarchy:
             scenarios and specifications, improving collaboration between stakeholders and developers. The team may
             also practice Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single
             branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main
-            is made safe with mature TDD and quality engineering practices.
+            is made safe with mature TDD and quality engineering practices. AI predicts build failures, resolves merge
+            conflicts, prioritises critical tests, and delivers lightweight automated reviews, increasing integration
+            speed and reliability.
           Purpose: >
             Ensure main branch is always in a releaseable state. Forced automation of essential quality controls.
             Smaller batch sizes reduce the risk of integration issues.
           maturitySignals: >
             Green-build confidence; Successful builds are safe to deploy to production without further inspection.
-            At least one build per active contributor per day.
+            At least one build per active contributor per day. AI-supported build pipelines proactively flag risks,
+            suggest fixes, and automate parts of the review process. AI improves merge speed, build reliability,
+            and review consistency.
         - ID: 3-compliance-as-code
           Name: Compliance as Code
           Definition: >
@@ -466,13 +498,14 @@ hierarchy:
             and maintain code quality standards. These tools automatically analyse code, check for common programming
             errors, and enforce coding conventions. Tools run locally and as part of automated builds to detect and
             resolve new issues as early as possible. Data on software composition & supply chain is available centrally
-            to manage licensing and security vulnerability risk.
+            to manage licensing and security vulnerability risk. AI enhances static analysis with fewer false positives,
+            intelligent fix suggestions, and improved context-awareness, making reviews faster and more effective.
           Purpose: >
             Proactively detect and resolve code issues, potential vulnerabilities and enforce coding conventions.
           maturitySignals: >
             Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
             Detected issues are triaged by team members regularly. Security and Quality representatives curate filters
-            and criteria.
+            and criteria. AI-assisted static analysis is part of routine development and review workflows.
 
     - level: 4
       name: Sustainability
@@ -504,13 +537,15 @@ hierarchy:
           Name: Product Metrics
           Definition: >
             The team effectively captures and analyzes product performance metrics, enabling data-driven
-            decision-making and continuous product improvement.
+            decision-making and continuous product improvement. AI identifies themes and sentiment from user feedback,
+            predicts churn, and surfaces product insights that inform roadmap decisions.
           Purpose: >
             The team can independently form and test a new hypothesis using standard user event capture, aggregation
             and visualization tools.
           maturitySignals: >
             User events and flows are well-documented and accessible to all teams. Event processing filters activity
-            from automated testing.
+            from automated testing. AI-driven insights are regularly reviewed to guide product strategy
+            and prioritisation.
         - ID: 4-experimentation
           Name: Experimentation
           Definition: >
@@ -567,6 +602,7 @@ hierarchy:
           maturitySignals: >
 
         - ID: 5-governance
+          ID: amotjer
           Name: Governance & DR
           Definition: >
             The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and
@@ -581,26 +617,32 @@ hierarchy:
             Recovery Time Objectives (RTOs) are validated.
             Teams understand the Cost to Serve for their primary components.
 
-        - ID: 5-hypothesis-driven
+        - ID: 5-hypothesis -driven
           Name: Hypothesis Driven
           Definition: >
             The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and
             insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise
-            initiatives, and drive innovation, creating more customer value.
+            initiatives, and drive innovation, creating more customer value. AI strengthens hypothesis driven
+            development by accelerating insight generation, experimentation planning, and data analysis,
+            reducing time-to-learning and improving experiment quality.
           Purpose: >
             Drive innovation while taking informed risks. Less waste on bad ideas.
           maturitySignals: >
             Experiments and data analysis systematically test and validate assumptions.
-            Experiments are used to genuinely acquire new knowledge.
+            Experiments are used to genuinely acquire new knowledge. AI-supported tools assist in refining hypotheses,
+            designing experiments, and analysing results at scale.
         - ID: 5-chaos-engineering
           Name: Chaos / Game Days
           Definition: >
             By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness,
-            improve incident response capabilities, and enhance overall system reliability.
+            improve incident response capabilities, and enhance overall system reliability. AI supports chaos practices
+            by designing realistic failure scenarios, detecting failure patterns, and automating response validation,
+            making chaos days more proactive and insightful.
           Purpose: >
             During chaos/game days, the team simulates real-world failure scenarios, such as service outages or
             network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident
             response processes.
           maturitySignals: >
             My product team regularly conducts chaos/game days to proactively test and validate the system's
-            resilience and readiness for unexpected scenarios.
+            resilience and readiness for unexpected scenarios. AI tools assist in scenario design, monitoring,
+            and post event analysis to improve future outcomes.
