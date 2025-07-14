@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll --watchPathIgnorePatterns node_modules",
-    "lint:yaml": "./node_modules/.bin/yamllint ../definitions.yaml",
+    "lint:yaml": "npx yamllint ../definitions.yaml",
     "lint": "npm run lint:yaml"
   },
   "repository": {
@@ -32,6 +32,6 @@
     "ajv": "^8.12.0",
     "yaml-lint": "^1.7.0"
   },
-  "dependencies": {    
+  "dependencies": {
   }
 }
