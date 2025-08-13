@@ -15,12 +15,15 @@ hierarchy:
         - ID: 1-people-purpose
           Name: People & Purpose
           Definition: >-
-            Enough team members to meet the ownership and delivery expectations on them.
+            There are enough team members to meet the ownership and delivery expectations on them. People have defined
+            roles and responsibilities, and the team has a shared understanding of the project's vision and objectives.
           Purpose: >-
             The project's vision and objectives are clearly communicated, creating a sense of
             shared purpose, motivation and cohesion among team members and leadership.
           maturitySignals: >-
             I feel connected to the purpose and goals of the project I am working on.
+            I have a clear understanding of my role and responsibilities within the team.
+            There are enough team members to meet the ownership and delivery expectations on them.
         - ID: 1-tech-capability
           Name: Technical capability
           Definition: >-
@@ -124,7 +127,7 @@ hierarchy:
           Name: Operating Rhythms
           Definition: >
             The routines used by the team to manage delivery and operations. Planning on a daily,
-            weekly and quarterly basis. <b>Open communication</b> for timely updates, issue resolution,
+            weekly and quarterly basis. Open communication for timely updates, issue resolution,
             and knowledge sharing.
           Purpose: >
             Regular team meetings, stand-ups, and planning sessions foster a shared understanding of
@@ -369,7 +372,9 @@ hierarchy:
         The team has codified the creation of new services to
         their agreed standards. Compliance controls are managed
         and verifiable through change control. Quality of service
-        is monitored, reviewed, and managed proactively.
+        is monitored, reviewed, and managed proactively. The team
+        is accountable for the full ownership of their services
+        and has autonomy within boundaries to reach strategic outcomes.
       needs:
         - ID: 3-helpers-templates-accelerators
           Name: Templates & Golden Paths
@@ -486,7 +491,24 @@ hierarchy:
             Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
             Detected issues are triaged by team members regularly. Security and Quality representatives curate filters
             and criteria.
-
+        - ID: 3-aligned-accountability
+          Name: Aligned Accountability
+          Definition: >
+            Enable teams to take shared responsibility for delivering outcomes, not just outputs, while being trusted
+            to decide how they deliver within clear strategic and organisational boundaries. Aligned accountability
+            means that the team owns the problem, understands its impact on the customer or business, and collaborates
+            to find the best way forward. This includes making architecture, process, and delivery decisions together,
+            while continuously learning and improving as a team.
+          Purpose: >
+            Teams with aligned accountability move with greater confidence, purpose, and autonomy towards the strategic
+            goals. They are more invested in the outcomes they deliver and more capable of adapting when plans change.
+            This alignment strengthens ownership, reduces handoffs, and creates the conditions necessary for a
+            generative, high-performance culture to emerge.
+          maturitySignals: >
+            The team owns the problem and defines how to solve it. Outcomes are shared across engineering, product, and
+            design. Alignment cascades from the strategic goals. Decisions are made collaboratively within
+            clear these boundaries. Delivery practices and responsibilities are team-owned. The team reflects, improves
+            together and strives to learn fast from failure
     - level: 4
       name: Sustainability
       description: >
@@ -564,23 +586,28 @@ hierarchy:
         over long periods while maintaining, if not increasing,
         customer trust. Governance and controls for security, privacy, cost, and
         disaster recovery are in place and regularly exercised. Teams have enough space to run multiple experiments in
-        parallel and proactively learn about system behaviour through chaos engineering.
+        parallel and proactively learn about system behaviour through tools such as chaos engineering.
         Hackathons and Game days foster innovation by quickly acting on ideas discovered.
 
       needs:
-        - ID: 5-value-trust
-          Name: Value & Trust, Mastery
+        - ID: 5-generative-culture
+          Name: Generative Culture
           Definition: >
-            Fostering a culture of delivering value and building trust, the team prioritises customer needs and
-            consistently delivers reliable outcomes. Simultaneously, they strive for mastery through continuous
-            learning and professional development, ensuring expertise in their respective fields. This combination
-            drives innovation, collaboration, and excellence, exceeding customer expectations and maintaining a
-            competitive edge.
+            Establish and sustain a high-trust, performance oriented organisational culture where information flows
+            freely, cross-functional cooperation thrives, failure leads to inquiry rather than blame, and innovation
+            is actively encouraged. (Based on Ron Westrum's organisational culture research.)
           Purpose: >
-            To ensure that the team fosters a culture of delivering value and building trust, prioritising
-            customer needs and consistently delivering reliable outcomes.
+            This foundation fosters psychological safety, shared responsibility, and systemic learning. including
+            faster lead time, more frequent releases, quicker recovery from failures, and higher job satisfaction.
+            Teams are empowered to take smart risks, innovate, and learn from mistakes without fear, resulting in
+            sustainable and high-performing outcomes.
           maturitySignals: >
-
+            Teams actively seek and share knowledge, even  bad news, across silos and hierarchies.
+            Failures prompt inquiry and collective learning rather than blame and leaders respond with support and
+            curiosity.
+            Quality, reliability, and availability are embraced as a team responsibility, not siloed.
+            Novel ideas are welcomed and implemented, teams have both the permission and mechanisms to explore
+            improvements.
         - ID: 5-governance
           Name: Governance & DR
           Definition: >
