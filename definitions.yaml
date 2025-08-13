@@ -21,7 +21,6 @@ hierarchy:
             shared purpose, motivation and cohesion among team members and leadership.
           maturitySignals: >-
             I feel connected to the purpose and goals of the project I am working on.
-
         - ID: 1-tech-capability
           Name: Technical capability
           Definition: >-
@@ -598,7 +597,7 @@ hierarchy:
             Teams understand the Cost to Serve for their primary components.
             AI governance is clear and ensure effective use of AI tools.
 
-        - ID: 5-hypothesis -driven
+        - ID: 5-hypothesis-driven
           Name: Hypothesis Driven
           Definition: >
             The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and
