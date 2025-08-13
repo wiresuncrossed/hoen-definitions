@@ -21,24 +21,28 @@ hierarchy:
             shared purpose, motivation and cohesion among team members and leadership.
           maturitySignals: >-
             I feel connected to the purpose and goals of the project I am working on.
-
         - ID: 1-tech-capability
           Name: Technical capability
           Definition: >-
-            The team's technical capabilities align well with the requirements of the project.
-            Team members can complete daily activities confidently.
+            The team has the technical skills and confidence to design, build, and support robust systems and
+            align well with the requirements of the project. AI-assisted tools strengthen this capability by providing
+            contextual support across code, domain knowledge, and legacy systems, helping engineers ramp up, solve
+            problems, and continuously learn.
           Purpose: >-
             Increased independence and confidence. A solid understanding of the technologies,
-            frameworks and tools that are utilised, allowing them to design and develop
+            frameworks, and tools that are utilised, allowing them to design and develop
             robust solutions efficiently.
           maturitySignals: >-
-            Most people can pick up most work on the team. They regularly pair-program to help
-            with productivity and building experience.
+            Team members can confidently work across the codebase and domain.
+            AI tools are part of daily workflows, supporting coding, testing, and debugging.
+            Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
+            Knowledge is shared through pairing, code review, and tool-assisted discovery.
+            The team solves complex problems efficiently—even in unfamiliar systems.
 
         - ID: 1-env-mgmt
           Name: Environment Management
           Definition: >-
-            Ability to test and debug changes in a <b>prod-like environment</b>,
+            Ability to test and debug changes in a prod-like environment,
             infrastructure-as-code, data sets/data generation, dependency management
             and configuration, mocks, data generation, short-lived environments.
           Purpose: >-
@@ -54,10 +58,10 @@ hierarchy:
             With a well-maintained backlog, the project team can effectively plan,
             estimate, and track progress, ensuring a steady flow of value delivery.
           Purpose: >-
-            Prioritization reflects a balance of business, value, customer value,
+            Prioritisation reflects a balance of business, value, customer value,
             team productivity and service performance.
           maturitySignals: >-
-            The work backlog for my project is well-organized and prioritized.
+            The work backlog for my project is well-organised and prioritised.
             The backlog items are appropriately sized, ensuring efficient planning
             and task allocation.
 
@@ -149,13 +153,15 @@ hierarchy:
           Definition: >
             Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
             test and run activities for the primary services they work on. Service-specific local setup (e.g. install
-            dependencies, mocks, test data). Related to environment management.
+            dependencies, mocks, test data). Correctly integrated AI in editors provides real-time code suggestions,
+            and style guidance, improving development learning, code quality, and consistency.
           Purpose: >
             Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
             associated licenses are readily available.
           maturitySignals: >
             IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at
-            machine or repository level.
+            machine or repository level. AI-assisted tools in the IDE are configured with codebase context rules and
+            routinely used to explain and suggest code, detect issues and enforce style and architecture standards.
         - ID: 1-compute
           Name: Compute
           Definition: >
@@ -221,28 +227,33 @@ hierarchy:
             The team maintains a consistent repository of information on component ownership,
             support routines, team composition and solution architecture. The information is
             accessible across the organisation to support efficient onboarding, communication
-            and incident management across teams. All deployed infrastructure is identifiable
-            to the component and associated team level.
+            and incident management across teams. Information assists AI by providing high-quality, structured
+            data for training and inference. All deployed infrastructure is identifiable
+            to the component and associated team level. AI tools help auto-generate and summarise documentation
+            from code, meetings, or incident reports, ensuring decisions and knowledge are captured clearly
+            and shared efficiently.
           Purpose: >
             To ensure consistent and accessible documentation of system components and team
             responsibilities, facilitating efficient operations and knowledge sharing.
           maturitySignals: >
             All codebases and deployed infrastructure are identifiable to the component and
-            associated team level.
-
+            associated team level. AI reduces the manual effort involved in keeping information accurate
+            and up-to-date.
         - ID: 2-standards
           Name: Standards Compliance
           Definition: >
             The combined organisation obligations (e.g. audit, regulations) and agreed best
             practices are documented, transparent and respected by teams. There is a process
             to propose and accept changes to established standards. The level of compliance
-            with standards is visible across the organisation.
+            with standards is visible across the organisation. AI use is defined in standards and
+            is actively monitored that AI tools are in adherence to these organisational standards.
           Purpose: >
             Ensure teams adhere to established standards and regulations, promoting
             transparency and accountability.
           maturitySignals: >
             The level of compliance with standards is visible to all stakeholders across
-            the organisation.
+            the organisation. AI-assisted code, documentation and outputs are consistently
+            reviewed for compliance and quality.
 
         - ID: 2-on-call
           Name: On-call
@@ -366,13 +377,15 @@ hierarchy:
             A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent
             implementation of best practices across our common component types. Component / Project templates implement
             blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine
-            templates into workflows to scaffold, build, test and deploy new services in under an hour.
+            templates into workflows to scaffold, build, test and deploy new services in under an hour. AI learns
+            from past projects and existing codebases to dynamically help boot strap and accelerate development.
           Purpose: >
             Automated standardisation of agreed best practices and compliance across common component types.
           maturitySignals: >
             New components or projects can be created and deployed to production in under an hour.
             Regular contributions to the shared templates and accelerators from Communities of Practice or
             specialist groups. It is easy to transfer ownership of components or projects between teams.
+            AI is used to assist in generating, evolving templates and accelerate new component development.
         - ID: 3-continuous-integration
           Name: Continuous Integration
           Definition: >
@@ -504,13 +517,15 @@ hierarchy:
           Name: Product Metrics
           Definition: >
             The team effectively captures and analyzes product performance metrics, enabling data-driven
-            decision-making and continuous product improvement.
+            decision-making and continuous product improvement. AI analysis of user metrics and feedback used to deepen
+            understanding of user behaviour and preferences.
           Purpose: >
             The team can independently form and test a new hypothesis using standard user event capture, aggregation
             and visualization tools.
           maturitySignals: >
             User events and flows are well-documented and accessible to all teams. Event processing filters activity
-            from automated testing.
+            from automated testing. AI-driven insights are regularly reviewed to guide product strategy
+            and prioritisation.
         - ID: 4-experimentation
           Name: Experimentation
           Definition: >
@@ -572,7 +587,7 @@ hierarchy:
             The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and
             operations. Wherever possible, these controls are automated into the Engineering activities. The team
             proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their
-            business continuity commitments.
+            business continuity commitments. AI use is governed by clear policies and guidelines.
           Purpose: >
             To ensure that the team enjoys adequate governance controls and disaster recovery (DR) measures for their
             services and operations. Wherever possible, these controls are automated into the Engineering activities.
@@ -580,6 +595,7 @@ hierarchy:
             Annual audits do not interrupt the team's regular work.
             Recovery Time Objectives (RTOs) are validated.
             Teams understand the Cost to Serve for their primary components.
+            AI governance is clear and ensure effective use of AI tools.
 
         - ID: 5-hypothesis-driven
           Name: Hypothesis Driven
