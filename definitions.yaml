@@ -22,7 +22,8 @@ hierarchy:
             shared purpose, motivation and cohesion among team members and leadership.
           maturitySignals: >-
             I feel connected to the purpose and goals of the project I am working on.
-            I have a clear understanding of my role and responsibilities within the team.
+            I have a clear understanding of my role, responsibilities and my daily tasks.
+            All decisions have a clear owner and are made in a timely manner.
             There are enough team members to meet the ownership and delivery expectations on them.
         - ID: 1-tech-capability
           Name: Technical capability
@@ -497,8 +498,8 @@ hierarchy:
             Enable teams to take shared responsibility for delivering outcomes, not just outputs, while being trusted
             to decide how they deliver within clear strategic and organisational boundaries. Aligned accountability
             means that the team owns the problem, understands its impact on the customer or business, and collaborates
-            to find the best way forward. This includes making architecture, process, and delivery decisions together,
-            while continuously learning and improving as a team.
+            to find the best way forward. This includes making architecture, process, and delivery decisions together
+            within agreed organisational standards, while continuously learning and improving as a team.
           Purpose: >
             Teams with aligned accountability move with greater confidence, purpose, and autonomy towards the strategic
             goals. They are more invested in the outcomes they deliver and more capable of adapting when plans change.
@@ -506,9 +507,9 @@ hierarchy:
             generative, high-performance culture to emerge.
           maturitySignals: >
             The team owns the problem and defines how to solve it. Outcomes are shared across engineering, product, and
-            design. Alignment cascades from the strategic goals. Decisions are made collaboratively within
-            clear these boundaries. Delivery practices and responsibilities are team-owned. The team reflects, improves
-            together and strives to learn fast from failure
+            design. Alignment cascades from the strategic goals and agreed standards. Decisions are made collaboratively
+            within these clear boundaries. Delivery practices and responsibilities are team-owned. The team reflects,
+            improves together and strives to learn fast from failure
     - level: 4
       name: Sustainability
       description: >
@@ -517,7 +518,6 @@ hierarchy:
         The engineering team focus more on customer product metrics than on Engineering constraints.
         Experimentation techniques are embedded for both technical de-risking and customer behaviour hypotheses.
         The team enjoys a diversity of Engineering talent and experience.
-
       needs:
         - ID: 4-continuous-deployment
           Name: Continuous Deployment
@@ -604,8 +604,7 @@ hierarchy:
           maturitySignals: >
             Teams actively seek and share knowledge, even  bad news, across silos and hierarchies.
             Failures prompt inquiry and collective learning rather than blame and leaders respond with support and
-            curiosity.
-            Quality, reliability, and availability are embraced as a team responsibility, not siloed.
+            curiosity. Quality, reliability, and availability are embraced as a team responsibility, not siloed.
             Novel ideas are welcomed and implemented, teams have both the permission and mechanisms to explore
             improvements.
         - ID: 5-governance
