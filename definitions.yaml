@@ -258,7 +258,6 @@ hierarchy:
             The level of compliance with standards is visible to all stakeholders across
             the organisation. AI-assisted code, documentation and outputs are consistently
             reviewed for compliance and quality.
-
         - ID: 2-on-call
           Name: On-call
           Definition: >
@@ -284,6 +283,21 @@ hierarchy:
           maturitySignals: >
             Green builds are safe to release without further inspection. Core workflows for each service are
             continually tested in production.
+        - ID: 2-continuous-integration
+          Name: Continuous Integration
+          Definition: >
+            All code changes are continually merged to the main branch several times a day. Minimal rework through
+            strong discipline of test, behavior, or specification driven development. Tests are written before and
+            during implementation to promote a strong understanding of requirements.Stakeholders give fast feedback
+            on a higher cadence with on-demand access to as-is versions of the applications. The team are likely
+            practicing Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single
+            branch as much as possible to encourage continuous integration.
+          Purpose: >
+            Ensure main branch is always in a releaseable state. Forced automation of essential quality controls.
+            Smaller batch sizes reduce the risk of integration issues.
+          maturitySignals: >
+            Green-build confidence; Successful builds are safe deploy to production without further inspection.
+            At least one build per active contributor per day.
         - ID: 2-security-controls
           Name: Security Controls
           Definition: >
@@ -392,23 +406,6 @@ hierarchy:
             Regular contributions to the shared templates and accelerators from Communities of Practice or
             specialist groups. It is easy to transfer ownership of components or projects between teams.
             AI is used to assist in generating, evolving templates and accelerate new component development.
-        - ID: 3-continuous-integration
-          Name: Continuous Integration
-          Definition: >
-            All code changes are continually merged to the main branch (trunk/main) several times a day.
-            Test-driven development (TDD) and behavior-driven development (BDD) practices are diligently followed by
-            team members. TDD ensures that tests are written before the code, promoting a thorough understanding of
-            requirements and facilitating comprehensive test coverage. BDD focuses on defining system behavior through
-            scenarios and specifications, improving collaboration between stakeholders and developers. The team may
-            also practice Trunk-based development (TBD) or non-blocking pull requests where Engineers work on a single
-            branch as much as possible to encourage continuous integration. Pushing changes directly to trunk or main
-            is made safe with mature TDD and quality engineering practices.
-          Purpose: >
-            Ensure main branch is always in a releaseable state. Forced automation of essential quality controls.
-            Smaller batch sizes reduce the risk of integration issues.
-          maturitySignals: >
-            Green-build confidence; Successful builds are safe to deploy to production without further inspection.
-            At least one build per active contributor per day.
         - ID: 3-compliance-as-code
           Name: Compliance as Code
           Definition: >
