@@ -286,7 +286,7 @@ hierarchy:
         - ID: 2-continuous-integration
           Name: Continuous Integration
           Definition: >
-            All code changes are continually merged to the main branch several times a day. Minimal rework through
+            All code changes are continually merged to your source control several times a day. Minimal rework through
             strong discipline of test, behavior, or specification driven development. Tests are written before and
             during implementation to promote a strong understanding of requirements.Stakeholders give fast feedback
             on a higher cadence with on-demand access to as-is versions of the applications. The team are likely
