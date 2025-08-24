@@ -631,3 +631,16 @@ hierarchy:
           maturitySignals: >
             Experiments and data analysis systematically test and validate assumptions.
             Experiments are used to genuinely acquire new knowledge.
+        - ID: 5-quality-of-service
+          Name: Quality of Service
+          Definition: >
+            The cummination of logging > Alerting > Incident Management > SLIs > SLOs and Product Metrics
+            into a proactive approach approach where service health trends inform decisions.
+          Purpose: >
+            Maintain or improve service reliability and user experience over time,
+            anticipating issues before customers notice. Moves SLIs/SLOs from “measurement only”
+            to a driver for decision-making.
+          maturitySignals: >
+            High-stakes company events proceed without restrictions on deployments.
+            Roadmap and weekly items are regularly driven by service health insights.
+            Degradation is detected before customer report it.
