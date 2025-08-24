@@ -631,15 +631,3 @@ hierarchy:
           maturitySignals: >
             Experiments and data analysis systematically test and validate assumptions.
             Experiments are used to genuinely acquire new knowledge.
-        - ID: 5-chaos-engineering
-          Name: Chaos / Game Days
-          Definition: >
-            By regularly subjecting the product to controlled chaos, the team can strengthen the system's robustness,
-            improve incident response capabilities, and enhance overall system reliability.
-          Purpose: >
-            During chaos/game days, the team simulates real-world failure scenarios, such as service outages or
-            network disruptions, to identify vulnerabilities, assess the system's response, and fine-tune incident
-            response processes.
-          maturitySignals: >
-            My product team regularly conducts chaos/game days to proactively test and validate the system's
-            resilience and readiness for unexpected scenarios.
