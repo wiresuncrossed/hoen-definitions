@@ -319,15 +319,21 @@ hierarchy:
         - ID: 2-alerting
           Name: Alerting
           Definition: >
-            The team has implemented an intelligent alerting mechanism that monitors key metrics in agreed thresholds
-            across request rates, errors and latency. Scheduled tests regularly check the primary service flows or user
-            actions for availability. When detecting abnormal system behaviour, the team is alerted before the customer
-            or stakeholder reports an issue.
+            Alerting is trusted to inform the team of abnormal system behaviour.
+            The team has implemented an intelligent alerting mechanism that
+            monitors key metrics in agreed thresholds across request rates,
+            errors and latency. Scheduled tests regularly
+            check the primary service flows or user actions for availability.
+            Distributed tracing and correlation enable effective
+            troubleshooting and debugging.
           Purpose: >
-            To ensure timely detection and response to abnormal system behaviour, preventing potential issues
-            from escalating.
+            To ensure timely detection and response to abnormal system
+            behaviour, preventing potential issues from escalating.
           maturitySignals: >-
-            The team normally detect and raise an issue before the customer or stakeholder reports an issue.
+            The team normally detect and raise an issue before the customer
+            or stakeholder reports an issue.
+            Distributed tracing is enabled for all components.
+            There is correlation across signals for faster debugging.
         - ID: 2-deployment-solutions
           Name: Deployment Solutions
           Definition: >
@@ -438,18 +444,24 @@ hierarchy:
             Incidents are raised, and resolved regularly and without panic. Incidents are lead by a variety of
             individuals. Interesting incidents are investigated and knowledge is shared with leadership
             and other teams.
-        - ID: 3-quality-of-service
-          Name: SLIs, SLOs
+          #  Old id was 3-quality-of-service
+        - ID: 3-service-metrics
+          Name: Service Metrics
           Definition: >
-            There are clear service level objectives (SLOs) and service level indicators (SLIs) that help measure
-            performance, ensuring the product consistently meets the defined quality and reliability standards.
-            These SLOs and SLIs define synthetic tests of primary workflows and key metrics, such as response time,
-            availability, and error rates.
+            Maintaining a clear view of service health from the user's
+            perspective. Key user journies and actions are defined and measured.
+            Service level objectives (SLOs), and service level indicators (SLIs)
+            are reviewed at regular intervals. These SLOs and SLIs define
+            synthetic tests of primary workflows and key metrics, such as
+            response time, availability, and error rates.
           Purpose: >
-            The team can monitor and continuously improve the product's performance against established benchmarks
-            and commitments made to customers.
+            The team can monitor the product's performance against established
+            benchmarks or expectations of stakeholders and users.
           maturitySignals: >
-            The team is aware of a baseline level of performance for their key services over the past 3-6 months.
+            The team is aware of a baseline level of performance for their key
+            services over the past 3-6 months.
+            Noisy errors and alerts are actively managed and reduced.
+
         - ID: 3-apis-sdks
           Name: APIs & SDKs
           Definition: >
@@ -641,10 +653,11 @@ hierarchy:
         - ID: 5-quality-of-service
           Name: Quality of Service
           Definition: >
-            The cummination of logging > Alerting > Incident Management >
+            The culmination of logging > Alerting > Incident Management >
             SLIs > SLOs and Product Metrics into a proactive approach
-            where service health trends inform decisions.
+            where service health trends inform decisions alongside new features.
           Purpose: >
+            Balancing value generation with value protection.
             Maintain or improve service reliability and user experience
             over time, anticipating issues before customers notice.
             Moves SLIs/SLOs from “measurement only” to a driver for
