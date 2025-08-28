@@ -5,7 +5,7 @@ hierarchy:
       name: Basic Needs
       description: >-
         What does any team, regardless of age and stage,
-        need to build an application and deploy changes to it?<br>
+        need to build an application and deploy changes to it?
         From People and purpose to Computing and a Backlog,
         all software projects need fundamental things in place
         for the team to succeed.
@@ -20,13 +20,13 @@ hierarchy:
           Purpose: >-
             The project's vision and objectives are clearly communicated, creating a sense of
             shared purpose, motivation and cohesion among team members and leadership.
-          maturitySignals: >-
-            I feel connected to the purpose and goals of the project I am working on.
-            I have a clear understanding of my role, responsibilities and my daily tasks.
-            All decisions have a clear owner and are made in a timely manner.
-            There are enough team members to meet the ownership and delivery expectations on them.
+          maturitySignals:
+            - I feel connected to the purpose and goals of the project I am working on.
+            - I have a clear understanding of my role, responsibilities and my daily tasks.
+            - All decisions have a clear owner and are made in a timely manner.
+            - There are enough team members to meet the ownership and delivery expectations on them.
         - ID: 1-tech-capability
-          Name: Technical capability
+          Name: Technical Capability
           Definition: >-
             The team has the technical skills and confidence to design, build, and support robust systems and
             align well with the requirements of the project. AI-assisted tools strengthen this capability by providing
@@ -36,13 +36,12 @@ hierarchy:
             Increased independence and confidence. A solid understanding of the technologies,
             frameworks, and tools that are utilised, allowing them to design and develop
             robust solutions efficiently.
-          maturitySignals: >-
-            Team members can confidently work across the codebase and domain.
-            AI tools are part of daily workflows, supporting coding, testing, and debugging.
-            Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
-            Knowledge is shared through pairing, code review, and tool-assisted discovery.
-            The team solves complex problems efficiently—even in unfamiliar systems.
-
+          maturitySignals:
+            - Team members can confidently work across the codebase and domain.
+            - AI tools are part of daily workflows, supporting coding, testing, and debugging.
+            - Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
+            - Knowledge is shared through pairing, code review, and tool-assisted discovery.
+            - The team solves complex problems efficiently—even in unfamiliar systems.
         - ID: 1-env-mgmt
           Name: Environment Management
           Definition: >-
@@ -53,9 +52,8 @@ hierarchy:
             Real dependencies, similar/same technically to production. Composable
             environments. Setting up and managing different environments for my
             project is efficient and cheap.
-          maturitySignals: >-
-            An environment for every change.
-
+          maturitySignals:
+            - An environment for every change.
         - ID: 1-work-backlog
           Name: Work Backlog
           Definition: >-
@@ -64,11 +62,9 @@ hierarchy:
           Purpose: >-
             Prioritisation reflects a balance of business, value, customer value,
             team productivity and service performance.
-          maturitySignals: >-
-            The work backlog for my project is well-organised and prioritised.
-            The backlog items are appropriately sized, ensuring efficient planning
-            and task allocation.
-
+          maturitySignals:
+            - The work backlog for my project is well-organised and prioritised.
+            - The backlog items are appropriately sized, ensuring efficient planning and task allocation.
         - ID: 1-data-storage
           Name: Data & Storage
           Definition: >-
@@ -78,13 +74,11 @@ hierarchy:
             Opinionated self-service data solutions are available for the teams
             across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are
             in place for performance, reliability, and data durability.
-          maturitySignals: >-
-            The mean-time-to-restore is known for its primary services. Sharding
-            or partitioning policies support the scale and regional context of
-            the services. The team can independently manage Data migrations and
-            schema changes. There is up-to-date documentation of schemas and
-            associated privacy or security classifications.
-
+          maturitySignals:
+            - The mean-time-to-restore is known for its primary services.
+            - Sharding or partitioning policies support the scale and regional context of the services.
+            - The team can independently manage Data migrations and schema changes.
+            - There is up-to-date documentation of schemas and associated privacy or security classifications.
         - ID: 1-version-control
           Name: Version Control
           Definition: >-
@@ -95,10 +89,10 @@ hierarchy:
             level. It is easy to track changes and support concurrent development
             and rollback changes. Clear association between repository, team and
             any deployed assets and overall project status.
-          maturitySignals: >-
-            There is guidance and examples on creation of repositories for internal
-            only, internal + trusted partners, and open source use cases.
-            The removal of permissions for ex employees and contractors is automated.
+          maturitySignals:
+            - Guidance and examples exist for creating internal, partner, and open source repositories.
+            - The removal of permissions for ex employees and contractors is automated.
+            - Branch protection rules are applied across repositories to ensure code quality, security and traceability.
 
         - ID: 1-prod-env
           Name: Production Environments
@@ -108,9 +102,9 @@ hierarchy:
           Purpose: >
             Production Environment ensures a seamless user experience and customer satisfaction by
             providing a reliable software deployment platform.
-          maturitySignals: >
-            Optimised and managed for high performance, scalability and availability. The team can
-            quickly access production log files and data to assist with troubleshooting issues.
+          maturitySignals:
+            - Optimised and managed for high performance, scalability and availability.
+            - The team can quickly access production log files and data to assist with troubleshooting issues.
 
           #  Old id was 1-observability
         - ID: 1-logging-monitoring
@@ -122,11 +116,10 @@ hierarchy:
           Purpose: >
             High level awareness of production health and adequate tooling and
             instrumentation to investigate issues.
-          maturitySignals: >
-            Dashbpards are in place for core signals such as latency, errors,
-            throughput, and ssaturation. Structured logs are implemented for
-            all components according to a unified standard.
-            We have basic alerting in place for latency and error rates.
+          maturitySignals:
+            - Dashboards are in place for core signals such as latency, errors, throughput, and saturation.
+            - Structured logs are implemented for all components according to a unified standard.
+            - We have basic alerting in place for latency and error rates.
 
         - ID: 1-operating-rhythms
           Name: Operating Rhythms
@@ -141,9 +134,9 @@ hierarchy:
             delivery, maintaining quality of service and improving efficiencies. There is Organisation
             level visibility on past and planned investments across new feature delivery, maintaining
             quality of service and improving productivity.
-          maturitySignals: >
-            Familiar and effective ceremonies. There is Clear visibility on past and planned investments
-            across new feature delivery, maintaining quality of service and improving productivity.
+          maturitySignals:
+            - We have familiar and effective ceremonies for planning and reviewing work and practices.
+            - There is clear visibility on past and planned investments in features, service quality, and productivity.
 
         - ID: 1-permissions-identity
           Name: Permissions & Identity
@@ -153,11 +146,11 @@ hierarchy:
           Purpose: >
             Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication
             flows.
-          maturitySignals: >-
-            The ability to script user generation or resets to help with integration test automation.
+          maturitySignals:
+            - The ability to script user generation or resets to help with integration test automation.
 
         - ID: 1-local-dev
-          Name: Local Dev + IDE
+          Name: Local Development & IDE
           Definition: >
             Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
             test and run activities for the primary services they work on. Service-specific local setup (e.g. install
@@ -166,10 +159,12 @@ hierarchy:
           Purpose: >
             Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
             associated licenses are readily available.
-          maturitySignals: >
-            IDE is setup consistent for new team members. Agreed coding conventions are codified in 'dot files' at
-            machine or repository level. AI-assisted tools in the IDE are configured with codebase context rules and
-            routinely used to explain and suggest code, detect issues and enforce style and architecture standards.
+          maturitySignals:
+            - IDE is setup consistent for new team members.
+            - Agreed coding conventions are codified in 'dot files' at machine or repository level.
+            - AI-assisted tools in the IDE are configured with codebase context rules
+            - AI routinely used to explain and suggest code, detect issues and enforce style and architecture standards.
+
         - ID: 1-compute
           Name: Compute
           Definition: >
@@ -180,10 +175,10 @@ hierarchy:
             opinionated sensible defaults. Clear options to support minimum capacity, elastic scaling, burst scaling
             and serverless. Guidance and defaults in place for performance, reliability and availability
             of compute platforms.
-          maturitySignals: >-
-            Running instances, configured containers younger than ([)two) weeks to improve patching compliance and
-            avoid stateful dependencies. Proactive management of minimum OS and runtime versions to avoid running
-            non supported versions of dependencies in production.
+          maturitySignals:
+            - Running instances and containers are regularly updated to maintain patch compliance.
+            - Actively avoid stateful dependencies.
+            - Minimum OS and runtime versions are actively maintained to prevent unsupported dependencies.
 
         - ID: 1-cloud-accounts
           Name: Cloud Accounts & IO
@@ -193,9 +188,9 @@ hierarchy:
             consistent virtual networks for deployed assets and across accounts.
           Purpose: >
             Higher team independence and compliance management.
-          maturitySignals: >-
-            Common resource types are created in highly compliant configuration. Accounts created with consistent
-            virtual networks for deployed assets and across accounts.
+          maturitySignals:
+            - Common resource types are created in highly compliant configuration.
+            - Accounts created with consistent virtual networks for deployed assets and across accounts.
 
         - ID: 1-gateways-web-delivery
           Name: Gateways & Web Delivery
@@ -207,15 +202,14 @@ hierarchy:
             optimised data transmission. With robust web delivery mechanisms, the project team can achieve high
             availability, scalability, and fault tolerance, delivering a seamless user experience and enabling
             effective integration with external systems.
-          maturitySignals: >-
-            Patterns and running examples are familiar to the team for API Gateways, content delivery and caching
-            management (e.g. Azure API Management, Cloudflare, Fastly, Akamai, Cloudfront, Kong, NGINX).
+          maturitySignals:
+            - Team is familiar with patterns, examples and tools for API gateways, content delivery, and caching.
 
     - level: 2
       name: Managed Work
       description: >
         What does the team need to make work repeatable and have
-        controls to verify the quality and efficiency of new work?<br>
+        controls to verify the quality and efficiency of new work?
 
         The team has begun to agree on standard technical practices.
         Documentation and information on components and their operational
@@ -243,10 +237,10 @@ hierarchy:
           Purpose: >
             To ensure consistent and accessible documentation of system components and team
             responsibilities, facilitating efficient operations and knowledge sharing.
-          maturitySignals: >
-            All codebases and deployed infrastructure are identifiable to the component and
-            associated team level. AI reduces the manual effort involved in keeping information accurate
-            and up-to-date.
+          maturitySignals:
+            - All codebases and deployed infrastructure are identifiable to the component and associated team level.
+            - AI reduces the manual effort involved in keeping information accurate and up-to-date.
+
         - ID: 2-standards
           Name: Standards Compliance
           Definition: >
@@ -258,10 +252,10 @@ hierarchy:
           Purpose: >
             Ensure teams adhere to established standards and regulations, promoting
             transparency and accountability.
-          maturitySignals: >
-            The level of compliance with standards is visible to all stakeholders across
-            the organisation. AI-assisted code, documentation and outputs are consistently
-            reviewed for compliance and quality.
+          maturitySignals:
+            - The level of compliance with standards is visible to all stakeholders across the organisation.
+            - AI-assisted code, documentation and outputs are consistently reviewed for compliance and quality.
+
         - ID: 2-on-call
           Name: On-call
           Definition: >
@@ -270,11 +264,12 @@ hierarchy:
             and include a debrief on any closed or ongoing incidents.
           Purpose: >
             The team is competent and confident to respond to alerts or incidents.
-          maturitySignals: >
-            The appropriate people are available and contacted promptly to respond to alerts
-            or incidents. Escalation paths are known and used. Expectations with responders
-            are clear and respected for out-of-hours and holiday periods. Handovers are
-            acknowledged and include a debrief on any closed or ongoing incidents.
+          maturitySignals:
+            - The appropriate people are available and contacted promptly to respond to alerts or incidents.
+            - Escalation paths are known and used.
+            - Expectations with responders are clear and respected for out-of-hours and holiday periods.
+            - Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
+
         - ID: 2-quality-engineering
           Name: Quality Engineering
           Definition: >
@@ -284,9 +279,10 @@ hierarchy:
           Purpose: >
             Ensure main branch software is always in a releaseable state. Drive increasing automation of regression
             testing.
-          maturitySignals: >
-            Green builds are safe to release without further inspection. Core workflows for each service are
-            continually tested in production.
+          maturitySignals:
+            - Green builds are safe to release without further inspection.
+            - Core workflows for each service are continually tested in production.
+
         - ID: 2-continuous-integration
           Name: Continuous Integration
           Definition: >
@@ -299,9 +295,9 @@ hierarchy:
           Purpose: >
             Ensure main branch is always in a releaseable state. Forced automation of essential quality controls.
             Smaller batch sizes reduce the risk of integration issues.
-          maturitySignals: >
-            Green-build confidence; Successful builds are safe deploy to production without further inspection.
-            At least one build per active contributor per day.
+          maturitySignals:
+            - Green-build confidence; Successful builds are safe deploy to production without further inspection.
+            - At least one build per active contributor per day.
         - ID: 2-security-controls
           Name: Security Controls
           Definition: >
@@ -312,10 +308,9 @@ hierarchy:
           Purpose: >
             To ensure that the team implements effective security controls throughout the development lifecycle,
             protecting the product and its data from potential security threats.
-          maturitySignals: >
-            The security review process does not slow down the development process.
-            The team understands their security posture and manages new issues in consultation with experts or
-            a supporting team.
+          maturitySignals:
+            - The security review process does not slow down the development process.
+            - We understand our security posture & manage new issues in consultation with experts or a supporting team.
         - ID: 2-alerting
           Name: Alerting
           Definition: >
@@ -329,11 +324,10 @@ hierarchy:
           Purpose: >
             To ensure timely detection and response to abnormal system
             behaviour, preventing potential issues from escalating.
-          maturitySignals: >-
-            The team normally detect and raise an issue before the customer
-            or stakeholder reports an issue.
-            Distributed tracing is enabled for all components.
-            There is correlation across signals for faster debugging.
+          maturitySignals:
+            - The team normally detect and raise an issue before the customer or stakeholder reports an issue.
+            - Distributed tracing is enabled for all components.
+            - There is correlation across signals for faster debugging.
         - ID: 2-deployment-solutions
           Name: Deployment Solutions
           Definition: >
@@ -345,9 +339,10 @@ hierarchy:
           Purpose: >-
             Promotes high-quality outcomes and continuous improvement. Vital integration point for compliance
             and change control.
-          maturitySignals: >
-            A failed pipeline is unusual and demands attention after (60) minutes.
-            Build capacity and speed is high enough to keep wait times under [10] minutes.
+          maturitySignals:
+            - A failed pipeline is unusual and demands attention after (60) minutes.
+            - Build capacity and speed is high enough to keep wait times under (10) minutes.
+
         - ID: 2-artifact-management
           Name: Artifact Management
           Definition: >
@@ -359,8 +354,10 @@ hierarchy:
             Team and component decoupling. To ensure that there is a standard solution for hosting, managing and
             distributing binaries and artefacts across the organisation, promoting high-quality outcomes and
             continuous improvement.
-          maturitySignals: >
-            It is routine to publish logs and test artefacts according to their audit requirements.
+          maturitySignals:
+            - It is routine to publish logs and test artefacts according to their audit requirements.
+            - There is a standard process for managing and distributing artefacts across the organisation.
+
         - ID: 2-infrastructure-as-code
           Name: Infrastructure as Code
           Definition: >
@@ -369,9 +366,9 @@ hierarchy:
             creation, configuration, maintenance and deletion through source code change control.
           Purpose: >
             Enforced change control for infrastructure. No bespoke environments (infrastructure and configuration).
-          maturitySignals: >
-            Cloud or data centre portals are used for diagnostics and learning but not for
-            applying changes.
+          maturitySignals:
+            - Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
+            - All infrastructure changes are made through code change control.
 
         - ID: 2-delivery-metrics
           Name: Delivery Metrics
@@ -383,16 +380,15 @@ hierarchy:
             data-driven decisions to improve delivery performance.
           Purpose: >
             Establish a discipline of measurement to improve delivery, quality and operational performance.
-          maturitySignals: >
-            We routinely identify bottlenecks and make data-driven decisions with leadership to improve delivery and
-            operational performance.
+          maturitySignals:
+            - We routinely make data-driven decisions with leadership to improve delivery and operational performance.
 
     - level: 3
       name: Effective Ownership
       description: >
         What does the team need to effectively own and operate
         services already in production, regardless of new
-        development work on those services?<br>
+        development work on those services?
 
         The team has codified the creation of new services to
         their agreed standards. Compliance controls are managed
@@ -411,11 +407,11 @@ hierarchy:
             from past projects and existing codebases to dynamically help boot strap and accelerate development.
           Purpose: >
             Automated standardisation of agreed best practices and compliance across common component types.
-          maturitySignals: >
-            New components or projects can be created and deployed to production in under an hour.
-            Regular contributions to the shared templates and accelerators from Communities of Practice or
-            specialist groups. It is easy to transfer ownership of components or projects between teams.
-            AI is used to assist in generating, evolving templates and accelerate new component development.
+          maturitySignals:
+            - New components or projects can be created and deployed to production in under an hour.
+            - Regular contributions to the shared templates and accelerators from Communities of Practice.
+            - It is easy to transfer ownership of components or projects between teams.
+            - AI is used to assist in generating, evolving templates and accelerate new component development.
         - ID: 3-compliance-as-code
           Name: Compliance as Code
           Definition: >
@@ -427,10 +423,9 @@ hierarchy:
           Purpose: >
             To ensure that the team incorporates compliance requirements as code, automating compliance checks and
             ensuring adherence to regulatory standards.
-          maturitySignals: >
-            Audit-related requests for information are straightforward, and largely self-serve. My team incorporates
-            compliance requirements as code, automating compliance checks and ensuring adherence to regulatory
-            standards.
+          maturitySignals:
+            - Audit-related requests for information are straightforward, and largely self-serve.
+            - We incorporate compliance requirements as code, automating checks for adherence to compliance & standards.
         - ID: 3-incident-mgmt
           Name: Incident Management
           Definition: >
@@ -440,10 +435,10 @@ hierarchy:
             are defined, ensuring effective coordination and collaboration during incident handling.
           Purpose: >
             Team is competent and confident to respond to inevitable incidents.
-          maturitySignals: >
-            Incidents are raised, and resolved regularly and without panic. Incidents are lead by a variety of
-            individuals. Interesting incidents are investigated and knowledge is shared with leadership
-            and other teams.
+          maturitySignals:
+            - Incidents are raised, and resolved regularly and without panic.
+            - Incidents are lead by a variety of individuals.
+            - Interesting incidents are investigated and knowledge is shared with leadership and other teams.
           #  Old id was 3-quality-of-service
         - ID: 3-service-metrics
           Name: Service Metrics
@@ -457,10 +452,9 @@ hierarchy:
           Purpose: >
             The team can monitor the product's performance against established
             benchmarks or expectations of stakeholders and users.
-          maturitySignals: >
-            The team is aware of a baseline level of performance for their key
-            services over the past 3-6 months.
-            Noisy errors and alerts are actively managed and reduced.
+          maturitySignals:
+            - The team is aware of a baseline level of performance for their key services over the past 3-6 months.
+            - Noisy errors and alerts are actively managed and reduced.
 
         - ID: 3-apis-sdks
           Name: APIs & SDKs
@@ -473,13 +467,10 @@ hierarchy:
             consuming teams automate testing.
           Purpose: To ensure that the team provides well-designed APIs and software development kits (SDKs) that
             facilitate integration and extensibility.
-          maturitySignals: >
-            The team provides well-designed APIs and software development kits (SDKs) that facilitate integration
-            and extensibility. The APIs offer clear documentation, well-defined contracts, and consistent interfaces,
-            enabling seamless interaction with the product's services and functionalities. The SDKs provide
-            comprehensive tooling, libraries, and code examples, simplifying the development process for external
-            and internal consumers. Internal publishers support fake or mock implementations of their APIs to help
-            consuming teams automate testing.
+          maturitySignals:
+            - Well-designed APIs and SDKs support integration and extensibility.
+            - APIs have clear documentation, contracts, and interfaces.
+            - SDKs include tooling, libraries, code examples, and support for mock implementations.
         - ID: 3-eventing
           Name: Eventing
           Definition: >
@@ -488,9 +479,9 @@ hierarchy:
           Purpose: >
             Customer solutions and analytics can be implemented as composable, extendable and highly decoupled
             implementations. Increased team decoupling and independence.
-          maturitySignals: >
-            Standard patterns, SDKs and tooling to publish, store, subscribe and consume events across APIs, workers,
-            Web and mobile clients. Schema validation is in place to block foreign or malformed events.
+          maturitySignals:
+            - Standard patterns, SDKs and tooling to publish, store, subscribe and consume events.
+            - Schema validation is in place to block foreign or malformed events.
         - ID: 3-static-analysis
           Name: Static Analysis
           Definition: >
@@ -501,10 +492,10 @@ hierarchy:
             to manage licensing and security vulnerability risk.
           Purpose: >
             Proactively detect and resolve code issues, potential vulnerabilities and enforce coding conventions.
-          maturitySignals: >
-            Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
-            Detected issues are triaged by team members regularly. Security and Quality representatives curate filters
-            and criteria.
+          maturitySignals:
+            - Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
+            - Detected issues are triaged by team members regularly.
+            - Security and Quality representatives curate filters and criteria.
         - ID: 3-aligned-accountability
           Name: Aligned Accountability
           Definition: >
@@ -518,15 +509,17 @@ hierarchy:
             goals. They are more invested in the outcomes they deliver and more capable of adapting when plans change.
             This alignment strengthens ownership, reduces handoffs, and creates the conditions necessary for a
             generative, high-performance culture to emerge.
-          maturitySignals: >
-            The team owns the problem and defines how to solve it. Outcomes are shared across engineering, product, and
-            design. Alignment cascades from the strategic goals and agreed standards. Decisions are made collaboratively
-            within these clear boundaries. Delivery practices and responsibilities are team-owned. The team reflects,
-            improves together and strives to learn fast from failure
+          maturitySignals:
+            - The team owns the problem and defines how to solve it.
+            - Outcomes are shared across engineering, product, and design.
+            - Alignment cascades from the strategic goals and agreed standards.
+            - Decisions are made collaboratively within these clear boundaries.
+            - Delivery practices and responsibilities are team-owned.
+            - The team reflects, improves together and strives to learn fast from failure.
     - level: 4
       name: Sustainability
       description: >
-        What does the team need to grow and mature on a yearly level? <br>
+        What does the team need to grow and mature on a yearly level?
         Technical practices have made continuous deployment to production a norm.
         The engineering team focus more on customer product metrics than on Engineering constraints.
         Experimentation techniques are embedded for both technical de-risking and customer behaviour hypotheses.
@@ -544,10 +537,9 @@ hierarchy:
           Purpose: >
             Maximum throughput of changes while verifiably maintaining quality of changes. Very fast feedback loops.
             High throughput of small lower-risk changes.
-          maturitySignals: >
-            High degree of release controls (e.g. feature flags, experiments) ensure it's safe to deploy partially
-            implemented features. High maturity alerting, quality of service, and incident management to detect and
-            revert problem changes.
+          maturitySignals:
+            - High degree of release controls (e.g. feature flags) to safely deploy partially implemented features.
+            - High maturity alerting, quality of service, and incident management to detect and revert problem changes.
         - ID: 4-product-metrics
           Name: Product Metrics
           Definition: >
@@ -557,10 +549,10 @@ hierarchy:
           Purpose: >
             The team can independently form and test a new hypothesis using standard user event capture, aggregation
             and visualization tools.
-          maturitySignals: >
-            User events and flows are well-documented and accessible to all teams. Event processing filters activity
-            from automated testing. AI-driven insights are regularly reviewed to guide product strategy
-            and prioritisation.
+          maturitySignals:
+            - User events and flows are well-documented and accessible to all teams.
+            - Event processing filters activity from automated testing.
+            - AI-driven insights are regularly reviewed to guide product strategy and prioritisation.
         - ID: 4-experimentation
           Name: Experimentation
           Definition: >
@@ -570,9 +562,9 @@ hierarchy:
           Purpose: >
             Actively promotes a culture of experimentation to support both hypothesis-driven development and technical
             risk management.
-          maturitySignals: >
-            The team can run multiple experiments in parallel. Significant system changes can be safely
-            tested in production.
+          maturitySignals:
+            - The team can run multiple experiments in parallel.
+            - Significant system changes can be safely tested in production.
         - ID: 4-career-growth
           Name: Career Growth
           Definition: >
@@ -586,9 +578,9 @@ hierarchy:
             Everyday pairing and coaching on specialised areas avoid key person dependencies.
             Regular performance evaluations and constructive feedback help identify areas for improvement and define
             career paths.
-          maturitySignals: >
-            There is a mix of junior and senior talent on the team. My team provides ample opportunities for career
-            growth and professional development.
+          maturitySignals:
+            - There is a mix of junior and senior talent on the team.
+            - My team provides ample opportunities for career growth and professional development.
 
     - level: 5
       name: Flow
@@ -615,12 +607,12 @@ hierarchy:
             faster lead time, more frequent releases, quicker recovery from failures, and higher job satisfaction.
             Teams are empowered to take smart risks, innovate, and learn from mistakes without fear, resulting in
             sustainable and high-performing outcomes.
-          maturitySignals: >
-            Teams actively seek and share knowledge, even  bad news, across silos and hierarchies.
-            Failures prompt inquiry and collective learning rather than blame and leaders respond with support and
-            curiosity. Quality, reliability, and availability are embraced as a team responsibility, not siloed.
-            Novel ideas are welcomed and implemented, teams have both the permission and mechanisms to explore
-            improvements.
+          maturitySignals:
+            - Teams actively seek and share knowledge, even bad news, across silos and hierarchies.
+            - Failures prompt inquiry and collective learning rather than blame
+            - Leaders respond with support and curiosity.
+            - Quality, reliability, and availability are embraced as a team responsibility, not siloed.
+            - Novel ideas are welcomed & implemented, teams have permission & mechanisms to explore improvements.
 
         - ID: 5-governance
           Name: Governance & DR
@@ -632,11 +624,11 @@ hierarchy:
           Purpose: >
             To ensure that the team enjoys adequate governance controls and disaster recovery (DR) measures for their
             services and operations. Wherever possible, these controls are automated into the Engineering activities.
-          maturitySignals: >
-            Annual audits do not interrupt the team's regular work.
-            Recovery Time Objectives (RTOs) are validated.
-            Teams understand the Cost to Serve for their primary components.
-            AI governance is clear and ensure effective use of AI tools.
+          maturitySignals:
+            - Annual audits do not interrupt the team's regular work.
+            - Recovery Time Objectives (RTOs) are validated.
+            - Teams understand the Cost to Serve for their primary components.
+            - AI governance is clear and ensure effective use of AI tools.
 
         - ID: 5-hypothesis-driven
           Name: Hypothesis Driven
@@ -646,9 +638,9 @@ hierarchy:
             initiatives, and drive innovation, creating more customer value.
           Purpose: >
             Drive innovation while taking informed risks. Less waste on bad ideas.
-          maturitySignals: >
-            Experiments and data analysis systematically test and validate assumptions.
-            Experiments are used to genuinely acquire new knowledge.
+          maturitySignals:
+            - Experiments and data analysis systematically test and validate assumptions.
+            - Experiments are used to genuinely acquire new knowledge.
 
         - ID: 5-quality-of-service
           Name: Quality of Service
@@ -662,8 +654,7 @@ hierarchy:
             over time, anticipating issues before customers notice.
             Moves SLIs/SLOs from “measurement only” to a driver for
             decision-making.
-          maturitySignals: >
-            High-stakes company events proceed without restrictions
-            on deployments. Roadmap and weekly items are regularly driven by
-            service health insights. Degradation is detected before customers
-            report it.
+          maturitySignals:
+            - High-stakes company events proceed without restrictions on deployments.
+            - Roadmap and weekly items are regularly driven by service health insights.
+            - Degradation is detected before customers report it.
