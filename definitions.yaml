@@ -41,7 +41,7 @@ hierarchy:
             - AI tools are part of daily workflows, supporting coding, testing, and debugging.
             - Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
             - Knowledge is shared through pairing, code review, and tool-assisted discovery.
-            - The team solves complex problems efficiently—even in unfamiliar systems.
+            - The team solves complex problems efficiently, even in unfamiliar systems.
         - ID: 1-env-mgmt
           Name: Environment Management
           Definition: >-
