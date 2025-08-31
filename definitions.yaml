@@ -28,19 +28,19 @@ hierarchy:
         - ID: 1-tech-capability
           Name: Technical Capability
           Definition: >-
-            The team has the technical skills and confidence to design, build, and support robust systems and
+            The team has the technical skills and confidence to design, build and support robust systems and
             align well with the requirements of the project. AI-assisted tools strengthen this capability by providing
-            contextual support across code, domain knowledge, and legacy systems, helping engineers ramp up, solve
-            problems, and continuously learn.
+            contextual support across code, domain knowledge and legacy systems, helping engineers ramp up, solve
+            problems and continuously learn.
           Purpose: >-
             Increased independence and confidence. A solid understanding of the technologies,
-            frameworks, and tools that are utilised, allowing them to design and develop
+            frameworks and tools that are utilised, allowing them to design and develop
             robust solutions efficiently.
           maturitySignals:
             - Team members can confidently work across the codebase and domain.
-            - AI tools are part of daily workflows, supporting coding, testing, and debugging.
+            - AI tools are part of daily workflows, supporting coding, testing and debugging.
             - Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
-            - Knowledge is shared through pairing, code review, and tool-assisted discovery.
+            - Knowledge is shared through pairing, code review and tool-assisted discovery.
             - The team solves complex problems efficiently, even in unfamiliar systems.
         - ID: 1-env-mgmt
           Name: Environment Management
@@ -58,9 +58,9 @@ hierarchy:
           Name: Work Backlog
           Definition: >-
             With a well-maintained backlog, the project team can effectively plan,
-            estimate, and track progress, ensuring a steady flow of value delivery.
+            estimate and track progress, ensuring a steady flow of value delivery.
           Purpose: >-
-            Prioritisation reflects a balance of business, value, customer value,
+            Prioritisation reflects a balance of business value, customer value,
             team productivity and service performance.
           maturitySignals:
             - The work backlog for my project is well-organised and prioritised.
@@ -73,7 +73,7 @@ hierarchy:
           Purpose: >-
             Opinionated self-service data solutions are available for the teams
             across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are
-            in place for performance, reliability, and data durability.
+            in place for performance, reliability and data durability.
           maturitySignals:
             - The mean-time-to-restore is known for its primary services.
             - Sharding or partitioning policies support the scale and regional context of the services.
@@ -90,7 +90,7 @@ hierarchy:
             and rollback changes. Clear association between repository, team and
             any deployed assets and overall project status.
           maturitySignals:
-            - Guidance and examples exist for creating internal, partner, and open source repositories.
+            - Guidance and examples exist for creating internal, partner and open source repositories.
             - The removal of permissions for ex employees and contractors is automated.
             - Branch protection rules are applied across repositories to ensure code quality, security and traceability.
 
@@ -117,7 +117,7 @@ hierarchy:
             High level awareness of production health and adequate tooling and
             instrumentation to investigate issues.
           maturitySignals:
-            - Dashboards are in place for core signals such as latency, errors, throughput, and saturation.
+            - Dashboards are in place for core signals such as latency, errors, throughput and saturation.
             - Structured logs are implemented for all components according to a unified standard.
             - We have basic alerting in place for latency and error rates.
 
@@ -128,15 +128,15 @@ hierarchy:
             weekly and quarterly basis. Open communication for timely updates, issue resolution,
             and knowledge sharing.
           Purpose: >
-            Regular team meetings, stand-ups, and planning sessions foster a shared understanding of
+            Regular team meetings, stand-ups and planning sessions foster a shared understanding of
             priorities and facilitate the coordination of tasks. Achievements are celebrated, learnings
-            are sought, and the team is empowered to balance capacity investment across new feature
+            are sought and the team is empowered to balance capacity investment across new feature
             delivery, maintaining quality of service and improving efficiencies. There is Organisation
             level visibility on past and planned investments across new feature delivery, maintaining
             quality of service and improving productivity.
           maturitySignals:
             - We have familiar and effective ceremonies for planning and reviewing work and practices.
-            - There is clear visibility on past and planned investments in features, service quality, and productivity.
+            - There is clear visibility on past and planned investments in features, service quality and productivity.
 
         - ID: 1-permissions-identity
           Name: Permissions & Identity
@@ -155,7 +155,7 @@ hierarchy:
             Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
             test and run activities for the primary services they work on. Service-specific local setup (e.g. install
             dependencies, mocks, test data). Correctly integrated AI in editors provides real-time code suggestions,
-            and style guidance, improving development learning, code quality, and consistency.
+            and style guidance, improving development learning, code quality and consistency.
           Purpose: >
             Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
             associated licenses are readily available.
@@ -200,10 +200,10 @@ hierarchy:
           Purpose: >
             These gateways provide a unified entry point, handle routing and load balancing, and ensure secure and
             optimised data transmission. With robust web delivery mechanisms, the project team can achieve high
-            availability, scalability, and fault tolerance, delivering a seamless user experience and enabling
+            availability, scalability and fault tolerance, delivering a seamless user experience and enabling
             effective integration with external systems.
           maturitySignals:
-            - Team is familiar with patterns, examples and tools for API gateways, content delivery, and caching.
+            - Team is familiar with patterns, examples and tools for API gateways, content delivery and caching.
 
     - level: 2
       name: Managed Work
@@ -260,7 +260,7 @@ hierarchy:
           Name: On-call
           Definition: >
             The on-call process is well-structured and familiar to all team members. Clear
-            escalation paths, and expectations are documented. Handovers are acknowledged
+            escalation paths and expectations are documented. Handovers are acknowledged
             and include a debrief on any closed or ongoing incidents.
           Purpose: >
             The team is competent and confident to respond to alerts or incidents.
@@ -362,7 +362,7 @@ hierarchy:
           Name: Infrastructure as Code
           Definition: >
             Infrastructure configurations are defined in code, enabling version control,
-            reproducibility, and automated provisioning. The team manages workload infrastructure
+            reproducibility and automated provisioning. The team manages workload infrastructure
             creation, configuration, maintenance and deletion through source code change control.
           Purpose: >
             Enforced change control for infrastructure. No bespoke environments (infrastructure and configuration).
@@ -375,8 +375,8 @@ hierarchy:
           Definition: >
             Key metrics, such as throughput (lead time, cycle time, rework, wait time), and operational performance
             (e.g. availability, latency, error rate, incidents) are regularly reviewed and used. These metrics provide
-            insights into delivery efficiency, predictability, and capacity to deliver value. The team can and does
-            identify bottlenecks by analysing delivery metrics, optimising processes, and continuously making
+            insights into delivery efficiency, predictability and capacity to deliver value. The team can and does
+            identify bottlenecks by analysing delivery metrics, optimising processes and continuously making
             data-driven decisions to improve delivery performance.
           Purpose: >
             Establish a discipline of measurement to improve delivery, quality and operational performance.
@@ -393,7 +393,7 @@ hierarchy:
         The team has codified the creation of new services to
         their agreed standards. Compliance controls are managed
         and verifiable through change control. Quality of service
-        is monitored, reviewed, and managed proactively. The team
+        is monitored, reviewed and managed proactively. The team
         is accountable for the full ownership of their services
         and has autonomy within boundaries to reach strategic outcomes.
       needs:
@@ -418,25 +418,25 @@ hierarchy:
             My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to
             regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during
             the development and deployment process. By treating compliance as code, the team can efficiently implement
-            and maintain compliance controls, reducing human error, enhancing auditability, and minimising the time and
+            and maintain compliance controls, reducing human error, enhancing auditability and minimising the time and
             effort required to maintain regulatory compliance.
           Purpose: >
             To ensure that the team incorporates compliance requirements as code, automating compliance checks and
             ensuring adherence to regulatory standards.
           maturitySignals:
-            - Audit-related requests for information are straightforward, and largely self-serve.
+            - Audit-related requests for information are straightforward and largely self-serve.
             - We incorporate compliance requirements as code, automating checks for adherence to compliance & standards.
         - ID: 3-incident-mgmt
           Name: Incident Management
           Definition: >
             The incident management process on my product is robust and well-structured, enabling swift response and
             minimising the impact of incidents. The team follows established incident response procedures, including
-            incident identification, communication, prioritisation, and resolution. Clear roles and responsibilities
+            incident identification, communication, prioritisation and resolution. Clear roles and responsibilities
             are defined, ensuring effective coordination and collaboration during incident handling.
           Purpose: >
             Team is competent and confident to respond to inevitable incidents.
           maturitySignals:
-            - Incidents are raised, and resolved regularly and without panic.
+            - Incidents are raised and resolved regularly and without panic.
             - Incidents are lead by a variety of individuals.
             - Interesting incidents are investigated and knowledge is shared with leadership and other teams.
           #  Old id was 3-quality-of-service
@@ -445,10 +445,10 @@ hierarchy:
           Definition: >
             Maintaining a clear view of service health from the user's
             perspective. Key user journies and actions are defined and measured.
-            Service level objectives (SLOs), and service level indicators (SLIs)
+            Service level objectives (SLOs) service level indicators (SLIs)
             are reviewed at regular intervals. These SLOs and SLIs define
             synthetic tests of primary workflows and key metrics, such as
-            response time, availability, and error rates.
+            response time, availability and error rates.
           Purpose: >
             The team can monitor the product's performance against established
             benchmarks or expectations of stakeholders and users.
@@ -460,17 +460,17 @@ hierarchy:
           Name: APIs & SDKs
           Definition: >
             The team provides well-designed APIs and software development kits (SDKs) that facilitate integration
-            and extensibility. The APIs offer clear documentation, well-defined contracts, and consistent interfaces,
+            and extensibility. The APIs offer clear documentation, well-defined contracts and consistent interfaces,
             enabling seamless interaction with the product's services and functionalities. The SDKs provide
-            comprehensive tooling, libraries, and code examples, simplifying the development process for external
+            comprehensive tooling, libraries and code examples, simplifying the development process for external
             and internal consumers. Internal publishers support fake or mock implementations of their APIs to help
             consuming teams automate testing.
           Purpose: To ensure that the team provides well-designed APIs and software development kits (SDKs) that
             facilitate integration and extensibility.
           maturitySignals:
             - Well-designed APIs and SDKs support integration and extensibility.
-            - APIs have clear documentation, contracts, and interfaces.
-            - SDKs include tooling, libraries, code examples, and support for mock implementations.
+            - APIs have clear documentation, contracts and interfaces.
+            - SDKs include tooling, libraries, code examples and support for mock implementations.
         - ID: 3-eventing
           Name: Eventing
           Definition: >
@@ -487,7 +487,7 @@ hierarchy:
           Definition: >
             The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities,
             and maintain code quality standards. These tools automatically analyse code, check for common programming
-            errors, and enforce coding conventions. Tools run locally and as part of automated builds to detect and
+            errors and enforce coding conventions. Tools run locally and as part of automated builds to detect and
             resolve new issues as early as possible. Data on software composition & supply chain is available centrally
             to manage licensing and security vulnerability risk.
           Purpose: >
@@ -502,16 +502,16 @@ hierarchy:
             Enable teams to take shared responsibility for delivering outcomes, not just outputs, while being trusted
             to decide how they deliver within clear strategic and organisational boundaries. Aligned accountability
             means that the team owns the problem, understands its impact on the customer or business, and collaborates
-            to find the best way forward. This includes making architecture, process, and delivery decisions together
+            to find the best way forward. This includes making architecture, process and delivery decisions together
             within agreed organisational standards, while continuously learning and improving as a team.
           Purpose: >
-            Teams with aligned accountability move with greater confidence, purpose, and autonomy towards the strategic
+            Teams with aligned accountability move with greater confidence, purpose and autonomy towards the strategic
             goals. They are more invested in the outcomes they deliver and more capable of adapting when plans change.
-            This alignment strengthens ownership, reduces handoffs, and creates the conditions necessary for a
+            This alignment strengthens ownership, reduces handoffs and creates the conditions necessary for a
             generative, high-performance culture to emerge.
           maturitySignals:
             - The team owns the problem and defines how to solve it.
-            - Outcomes are shared across engineering, product, and design.
+            - Outcomes are shared across engineering, product and design.
             - Alignment cascades from the strategic goals and agreed standards.
             - Decisions are made collaboratively within these clear boundaries.
             - Delivery practices and responsibilities are team-owned.
@@ -539,7 +539,7 @@ hierarchy:
             High throughput of small lower-risk changes.
           maturitySignals:
             - High degree of release controls (e.g. feature flags) to safely deploy partially implemented features.
-            - High maturity alerting, quality of service, and incident management to detect and revert problem changes.
+            - High maturity alerting, quality of service and incident management to detect and revert problem changes.
         - ID: 4-product-metrics
           Name: Product Metrics
           Definition: >
@@ -558,7 +558,7 @@ hierarchy:
           Definition: >
             The discipline of experimentation to support hypothesis-driven development and technical risk management
             (e.g. migrations, performance optimisations, new features). The team conducts controlled experiments,
-            A/B tests, and user research to validate assumptions, gather feedback, and inform decision-making.
+            A/B tests and user research to validate assumptions, gather feedback and inform decision-making.
           Purpose: >
             Actively promotes a culture of experimentation to support both hypothesis-driven development and technical
             risk management.
@@ -571,7 +571,7 @@ hierarchy:
             My product team provides ample opportunities for career growth and professional development.
             There is a mix of junior and senior talent on the team.
             Everyday pairing and coaching on specialised areas avoid key person dependencies.
-            The team and company encourage continuous learning, supports skill enhancement, and provides access to
+            The team and company encourage continuous learning, supports skill enhancement and provides access to
             training resources and mentorship programs. Regular performance evaluations and constructive feedback help
             identify areas for improvement and define career paths.
           Purpose: >
@@ -589,7 +589,7 @@ hierarchy:
         while enjoying high throughput and Industry leading quality of service?
         Maturity here is marked by being able to work productively
         over long periods while maintaining, if not increasing,
-        customer trust. Governance and controls for security, privacy, cost, and
+        customer trust. Governance and controls for security, privacy, cost and
         disaster recovery are in place and regularly exercised. Teams have
         enough space to run multiple experiments in parallel. A quality culture
         across teams upholds not just the quality of new work, but ensures
@@ -600,18 +600,18 @@ hierarchy:
           Name: Generative Culture
           Definition: >
             Establish and sustain a high-trust, performance oriented organisational culture where information flows
-            freely, cross-functional cooperation thrives, failure leads to inquiry rather than blame, and innovation
+            freely, cross-functional cooperation thrives, failure leads to inquiry rather than blame and innovation
             is actively encouraged. (Based on Ron Westrum's organisational culture research.)
           Purpose: >
-            This foundation fosters psychological safety, shared responsibility, and systemic learning. including
-            faster lead time, more frequent releases, quicker recovery from failures, and higher job satisfaction.
-            Teams are empowered to take smart risks, innovate, and learn from mistakes without fear, resulting in
+            This foundation fosters psychological safety, shared responsibility and systemic learning. including
+            faster lead time, more frequent releases, quicker recovery from failures and higher job satisfaction.
+            Teams are empowered to take smart risks, innovate and learn from mistakes without fear, resulting in
             sustainable and high-performing outcomes.
           maturitySignals:
             - Teams actively seek and share knowledge, even bad news, across silos and hierarchies.
             - Failures prompt inquiry and collective learning rather than blame
             - Leaders respond with support and curiosity.
-            - Quality, reliability, and availability are embraced as a team responsibility, not siloed.
+            - Quality, reliability and availability are embraced as a team responsibility, not siloed.
             - Novel ideas are welcomed & implemented, teams have permission & mechanisms to explore improvements.
 
         - ID: 5-governance
@@ -633,9 +633,9 @@ hierarchy:
         - ID: 5-hypothesis-driven
           Name: Hypothesis Driven
           Definition: >
-            The team formulates clear hypotheses, defines success criteria, and designs experiments to gather data and
+            The team formulates clear hypotheses, defines success criteria and designs experiments to gather data and
             insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise
-            initiatives, and drive innovation, creating more customer value.
+            initiatives and drive innovation, creating more customer value.
           Purpose: >
             Drive innovation while taking informed risks. Less waste on bad ideas.
           maturitySignals:
