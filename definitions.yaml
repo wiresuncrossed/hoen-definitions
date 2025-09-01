@@ -104,8 +104,8 @@ hierarchy:
         - ID: 1-prod-env
           Name: Production Environments
           Definition: >
-            Trusted combined state of configuration, deployed artifact(s),
-            infrastructure, runtimes, dependencies and access control.
+            Trusted combined state of configuration, deployed artefact(s), infrastructure, runtimes,
+            dependencies and access control.
           Purpose: >
             Production Environment ensures a seamless user experience and
             customer satisfaction by providing a reliable software deployment
@@ -351,8 +351,8 @@ hierarchy:
             - A failed pipeline is unusual and demands attention after (60) minutes.
             - Build capacity and speed is high enough to keep wait times under (10) minutes.
 
-        - ID: 2-artifact-management
-          Name: Artifact Management
+        - ID: 2-artefact-management
+          Name: Artefact Management
           Definition: >
             There is a standard solution for hosting, managing and distributing binaries and artefacts across
             the organisation. Artefacts include versioned binaries, library feeds (e.g. npm, NuGet, Maven),
