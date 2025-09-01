@@ -15,6 +15,20 @@ Site and visualization repo:
 ## Contributing
 If you wish to contribute, please follow our [contribution guide](./docs/CONTRIBUTING.md)
 
+### YAML Formatting Guidelines
+This project uses specific YAML formatting conventions to maintain readability:
+
+- **Line Length**: Maximum 120 characters (configured in `.yamllint`)
+- **Long Text**: Use block scalar format (`>-`) for wrapping long sentences
+- **Example**:
+  ```yaml
+  description: >-
+    This is a long description that wraps to multiple lines
+    but produces a single line value when parsed.
+  ```
+
+The formatting rules are enforced by yamllint and VS Code settings.
+
 ## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
