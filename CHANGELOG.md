@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed Value & Trust, Mastery ```5-value-trust```
 
 ### Fixed
-- Fixed grammer and clarity formatting
+- Fixed grammar and formatting for clarity and consistency
 
 ## [7.1.1] - 2025-03-17
 ### Added

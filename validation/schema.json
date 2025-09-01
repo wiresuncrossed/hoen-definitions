@@ -36,7 +36,7 @@
                     "Name": { "type": "string" },
                     "Definition": { "type": "string" },
                     "Purpose": { "type": "string" },
-                    "maturitySignals": { "type": "string" }
+                    "maturitySignals": { "type": "array", "items": { "type": "string" } }
                   }
                 }
               }
