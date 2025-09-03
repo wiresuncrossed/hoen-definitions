@@ -593,14 +593,12 @@ hierarchy:
     - level: 5
       name: Flow
       description: >-
-        What does the team need for a thriving innovation culture
-        while enjoying high throughput and Industry leading quality of service?
-        Maturity here is marked by being able to work productively
-        over long periods while maintaining, if not increasing,
-        customer trust. Governance and controls for security, privacy, cost and
-        disaster recovery are in place and regularly exercised. Teams have
-        enough space to run multiple experiments in parallel. A quality culture
-        across teams upholds not just the quality of new work, but ensures
+        What does the team need for a thriving innovation culture while enjoying high throughput and industry leading
+        quality of service?
+        Maturity here is marked by being able to work productively over long periods while maintaining, if not
+        increasing, customer trust. Governance and controls for security, privacy, cost, compliance and
+        business continuity are in place and regularly exercised. Teams have enough space to run multiple experiments
+        in parallel. A quality culture across teams upholds not just the quality of new work, but ensures
         services reliability and performance are meeting customer expectations.
 
       needs:
@@ -628,6 +626,10 @@ hierarchy:
             predictable and reliable ways. Governance provides clear controls over services, operations, and the
             use of AI tools, with an emphasis on automation to reduce overhead and human error. Teams enjoy efficient
             engineering workflows that ensure compliance with organisational and regulatory requirements.
+            Standardisation ensures a consistent approach to to practices and outputs, enabling teams to work in
+            predictable and reliable ways. Governance provides clear controls over services, operations, and the
+            use of AI tools, with an emphasis on automation to reduce overhead and human error. Teams enjoy efficient
+            engineering workflows that ensure compliance with organisational and regulatory requirements.
           Purpose: >
             To make teams more flexible and scalable by reducing variability in practices. Standardisation lowers
             onboarding friction, improves cross-team collaboration and ensures governance requirements are met without
@@ -638,6 +640,7 @@ hierarchy:
             - Governance controls are automated and embedded into the engineering workflow.
             - AI governance is clear and ensure effective use of AI tools.
             - Work or team members can move between teams with little friction.
+
         - ID: 5-value-generation
           Name: Value Generation
           Definition: >
@@ -646,9 +649,9 @@ hierarchy:
             and gathering fast feedback, the team reduces risk, adapts to change and maintains a high throughput
             of value delivery.
           Purpose: >
-             To enable rapid innovation and value generation. Minimise waste by validating ideas early and often.
-             Frequent, small deliveries ensure that the team continuously learns what works,
-             while keeping effort and risk low.
+            To enable rapid innovation and value generation. Minimise waste by validating ideas early and often.
+            Frequent, small deliveries ensure that the team continuously learns what works,
+            while keeping effort and risk low.
           maturitySignals:
             - Hypotheses, experiments and data analysis systematically test and validate assumptions.
             - Experiments are used to genuinely acquire new knowledge rapidly.
@@ -657,11 +660,10 @@ hierarchy:
         - ID: 5-quality-of-service
           Name: Quality of Service
           Definition: >
-            The culmination of logging > Alerting > Incident Management >
-            SLIs > SLOs and Product Metrics into a proactive approach
-            where service health trends inform decisions alongside new features. The team
-            proactively tests their DR procedures (e.g. backup, recovery, replication and failover)
-            to meet their business continuity commitments.
+            The culmination of logging > Alerting > Incident Management > SLIs > SLOs and Product Metrics into a
+            proactive approach where service health trends inform decisions alongside new features.
+            The team proactively tests their business continuity procedures (e.g. backup, recovery, replication and
+            failover) to meet their business continuity commitments.
           Purpose: >
             Balancing value generation with value protection.
             Maintain or improve service reliability and user experience
