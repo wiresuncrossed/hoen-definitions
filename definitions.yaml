@@ -621,48 +621,55 @@ hierarchy:
             - Leaders respond with support and curiosity.
             - Quality, reliability and availability are embraced as a team responsibility, not siloed.
             - Novel ideas are welcomed & implemented, teams have permission & mechanisms to explore improvements.
-
         - ID: 5-governance
-          Name: Governance & DR
+          Name: Governance & Standardisation
           Definition: >
-            The team enjoys adequate governance controls and disaster recovery (DR) measures for their services and
-            operations. Wherever possible, these controls are automated into the Engineering activities. The team
-            proactively tests their DR procedures (e.g., backup, recovery, replication and failover) to meet their
-            business continuity commitments. AI use is governed by clear policies and guidelines.
+            Standardisation ensures a consistent approach to to practices and outputs, enabling teams to work in
+            predictable and reliable ways. Governance provides clear controls over services, operations, and the
+            use of AI tools, with an emphasis on automation to reduce overhead and human error. Teams enjoy efficient
+            engineering workflows that ensure compliance with organisational and regulatory requirements.
           Purpose: >
-            To ensure that the team enjoys adequate governance controls and disaster recovery (DR) measures for their
-            services and operations. Wherever possible, these controls are automated into the Engineering activities.
+            To make teams more flexible and scalable by reducing variability in practices. Standardisation lowers
+            onboarding friction, improves cross-team collaboration and ensures governance requirements are met without
+            burdening day-to-day work. This builds trust in engineering outputs and supports compliance with internal
+            and external regulations.
           maturitySignals:
-            - Annual audits do not interrupt the team's regular work.
-            - Recovery Time Objectives (RTOs) are validated.
-            - Teams understand the Cost to Serve for their primary components.
+            - Annual or regular audits do not interrupt the team's regular work.
+            - Governance controls are automated and embedded into the engineering workflow.
             - AI governance is clear and ensure effective use of AI tools.
-
-        - ID: 5-hypothesis-driven
-          Name: Hypothesis Driven
+            - Work or team members can move between teams with little friction.
+        - ID: 5-value-generation
+          Name: Value Generation
           Definition: >
-            The team formulates clear hypotheses, defines success criteria and designs experiments to gather data and
-            insights. By continuously testing and refining ideas, the team can make informed decisions, prioritise
-            initiatives and drive innovation, creating more customer value.
+            The team maximises learning and customer value through rapid, small feedback loops. Work is broken
+            into small batches that can be delivered, tested, and iterated on quickly. By experimenting frequently
+            and gathering fast feedback, the team reduces risk, adapts to change and maintains a high throughput
+            of value delivery.
           Purpose: >
-            Drive innovation while taking informed risks. Less waste on bad ideas.
+             To enable rapid innovation and value generation. Minimise waste by validating ideas early and often.
+             Frequent, small deliveries ensure that the team continuously learns what works,
+             while keeping effort and risk low.
           maturitySignals:
-            - Experiments and data analysis systematically test and validate assumptions.
-            - Experiments are used to genuinely acquire new knowledge.
-
+            - Hypotheses, experiments and data analysis systematically test and validate assumptions.
+            - Experiments are used to genuinely acquire new knowledge rapidly.
+            - Teams maintain a steady flow of value delivery rather than large, infrequent releases.
+            - Decisions to continue, pivot, or stop work are made based on real feedback, not assumptions.
         - ID: 5-quality-of-service
           Name: Quality of Service
           Definition: >
             The culmination of logging > Alerting > Incident Management >
             SLIs > SLOs and Product Metrics into a proactive approach
-            where service health trends inform decisions alongside new features.
+            where service health trends inform decisions alongside new features. The team
+            proactively tests their DR procedures (e.g. backup, recovery, replication and failover)
+            to meet their business continuity commitments.
           Purpose: >
             Balancing value generation with value protection.
             Maintain or improve service reliability and user experience
             over time, anticipating issues before customers notice.
             Moves SLIs/SLOs from “measurement only” to a driver for
-            decision-making.
+            decision-making. Ability to recover from disasters.
           maturitySignals:
             - High-stakes company events proceed without restrictions on deployments.
             - Roadmap and weekly items are regularly driven by service health insights.
             - Degradation is detected before customers report it.
+            - Recovery Time Objectives (RTOs) are validated regularly.
