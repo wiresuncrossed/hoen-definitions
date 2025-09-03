@@ -593,13 +593,14 @@ hierarchy:
     - level: 5
       name: Flow
       description: >-
-        What does the team need for a thriving innovation culture while enjoying high throughput and industry leading
-        quality of service?
-        Maturity here is marked by being able to work productively over long periods while maintaining, if not
-        increasing, customer trust. Governance and controls for security, privacy, cost, compliance and
-        business continuity are in place and regularly exercised. Teams have enough space to run multiple experiments
-        in parallel. A quality culture across teams upholds not just the quality of new work, but ensures
-        services reliability and performance are meeting customer expectations.
+        What does the team need for a thriving innovation culture while enjoying high throughput and industry
+        leading quality of service?
+        Maturity here is marked by being able to work productively over long periods while maintaining trust.
+        Cutomer and shareholder trust is supported by regularly exercised controls for security, privacy, cost,
+        compliance and business continuity. Team trust is supported by a generative culture.
+        Teams have enough space to run multiple experiments in parallel.
+        A quality culture across teams upholds not just the quality of new work, but ensures services reliability
+        and performance are meeting customer expectations.
 
       needs:
         - ID: 5-generative-culture
@@ -622,24 +623,23 @@ hierarchy:
         - ID: 5-governance
           Name: Governance & Standardisation
           Definition: >
-            Standardisation ensures a consistent approach to to practices and outputs, enabling teams to work in
-            predictable and reliable ways. Governance provides clear controls over services, operations, and the
-            use of AI tools, with an emphasis on automation to reduce overhead and human error. Teams enjoy efficient
-            engineering workflows that ensure compliance with organisational and regulatory requirements.
-            Standardisation ensures a consistent approach to to practices and outputs, enabling teams to work in
-            predictable and reliable ways. Governance provides clear controls over services, operations, and the
-            use of AI tools, with an emphasis on automation to reduce overhead and human error. Teams enjoy efficient
-            engineering workflows that ensure compliance with organisational and regulatory requirements.
+            Standardisation ensures a consistent approach to practices and outputs, enabling teams to work in
+            predictable and reliable ways. Governance provides clear, verifiable controls across security, privacy,
+            cost, compliance, business continuity and the use of Artifical Intelligence (AI).
+            Teams enjoy efficient engineering workflows that ensure compliance with organisational and
+            regulatory requirements.
           Purpose: >
-            To make teams more flexible and scalable by reducing variability in practices. Standardisation lowers
-            onboarding friction, improves cross-team collaboration and ensures governance requirements are met without
-            burdening day-to-day work. This builds trust in engineering outputs and supports compliance with internal
-            and external regulations.
+            Enable scaling of teams, products and services, while maintaining team-level independence by standardisation
+            of common concerns. This builds trust in engineering outputs and supports compliance with internal and
+            external regulations.
+            Reduced technical and process diversity of lower-level needs improves cross-team collaboration and ensures
+            governance requirements are met without burdening day-to-day work.
           maturitySignals:
             - Annual or regular audits do not interrupt the team's regular work.
-            - Governance controls are automated and embedded into the engineering workflow.
-            - AI governance is clear and ensure effective use of AI tools.
+            - Governance controls are highly automated and embedded into the engineering workflow.
             - Work or team members can move between teams with little friction.
+            - Onboarding of individuals or external partners is efficient and frictionless.
+            - AI policy and controls are clear and ensure effective use of AI tools.
 
         - ID: 5-value-generation
           Name: Value Generation
@@ -657,6 +657,7 @@ hierarchy:
             - Experiments are used to genuinely acquire new knowledge rapidly.
             - Teams maintain a steady flow of value delivery rather than large, infrequent releases.
             - Decisions to continue, pivot, or stop work are made based on real feedback, not assumptions.
+
         - ID: 5-quality-of-service
           Name: Quality of Service
           Definition: >
