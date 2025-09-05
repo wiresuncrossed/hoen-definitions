@@ -625,7 +625,7 @@ hierarchy:
           Definition: >
             Standardisation ensures a consistent approach to practices and outputs, enabling teams to work in
             predictable and reliable ways. Governance provides clear, verifiable controls across security, privacy,
-            cost, compliance and business continuity.
+            cost, compliance, business continuity and the use of Artifical Intelligence (AI).
             Teams enjoy efficient engineering workflows that ensure compliance with organisational and
             regulatory requirements.
           Purpose: >
@@ -639,6 +639,7 @@ hierarchy:
             - Governance controls are highly automated and embedded into the engineering workflow.
             - Work or team members can move between teams with little friction.
             - Onboarding of individuals or external partners is efficient and frictionless.
+            - AI policy and controls are clear and ensure effective use of AI tools.
 
         - ID: 5-value-generation
           Name: Value Generation
@@ -656,6 +657,7 @@ hierarchy:
             - Experiments are used to genuinely acquire new knowledge rapidly.
             - Teams maintain a steady flow of value delivery rather than large, infrequent releases.
             - Decisions to continue, pivot, or stop work are made based on real feedback, not assumptions.
+
         - ID: 5-quality-of-service
           Name: Quality of Service
           Definition: >
