@@ -32,6 +32,7 @@ hierarchy:
             - I have a clear understanding of my role, responsibilities and my daily tasks.
             - All decisions have a clear owner and are made in a timely manner.
             - There are enough team members to meet the ownership and delivery expectations on them.
+
         - ID: 1-tech-capability
           Name: Technical Capability
           Definition: >-
@@ -49,57 +50,6 @@ hierarchy:
             - Engineers know how to and regularly use AI to accelerate learning and improve decision-making.
             - Knowledge is shared through pairing, code review and tool-assisted discovery.
             - The team solves complex problems efficiently, even in unfamiliar systems.
-        - ID: 1-env-mgmt
-          Name: Environment Management
-          Definition: >-
-            Ability to test and debug changes in a prod-like environment,
-            infrastructure-as-code, data sets/data generation, dependency management
-            and configuration, mocks, data generation, short-lived environments.
-          Purpose: >-
-            Real dependencies, similar/same technically to production. Composable
-            environments. Setting up and managing different environments for my
-            project is efficient and cheap.
-          maturitySignals:
-            - An environment for every change.
-        - ID: 1-work-backlog
-          Name: Work Backlog
-          Definition: >-
-            With a well-maintained backlog, the project team can effectively plan,
-            estimate and track progress, ensuring a steady flow of value delivery.
-          Purpose: >-
-            Prioritisation reflects a balance of business value, customer value,
-            team productivity and service performance.
-          maturitySignals:
-            - The work backlog for my project is well-organised and prioritised.
-            - The backlog items are appropriately sized, ensuring efficient planning and task allocation.
-        - ID: 1-data-storage
-          Name: Data & Storage
-          Definition: >-
-            Familiar, fit-for-purpose data storage solutions are available to suit
-            the organisation's obligations.
-          Purpose: >-
-            Opinionated self-service data solutions are available for the teams
-            across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are
-            in place for performance, reliability and data durability.
-          maturitySignals:
-            - The mean-time-to-restore is known for its primary services.
-            - Sharding or partitioning policies support the scale and regional context of the services.
-            - The team can independently manage Data migrations and schema changes.
-            - There is up-to-date documentation of schemas and associated privacy or security classifications.
-        - ID: 1-version-control
-          Name: Version Control
-          Definition: >-
-            New repositories, teams and projects and permissions are created in
-            a consistent way.
-          Purpose: >-
-            Clear guidance on branching strategies implemented at the organisation
-            level. It is easy to track changes and support concurrent development
-            and rollback changes. Clear association between repository, team and
-            any deployed assets and overall project status.
-          maturitySignals:
-            - Guidance and examples exist for creating internal, partner and open source repositories.
-            - The removal of permissions for ex employees and contractors is automated.
-            - Branch protection rules are applied across repositories to ensure code quality, security and traceability.
 
         - ID: 1-prod-env
           Name: Production Environments
@@ -114,6 +64,62 @@ hierarchy:
             - Optimised and managed for high performance, scalability and availability.
             - The team can quickly access production log files and data to assist with troubleshooting issues.
             - All customers are running production versions less than six months old or within 10 releases.
+
+        - ID: 1-env-mgmt
+          Name: Environment Management
+          Definition: >-
+            Ability to test and debug changes in a prod-like environment,
+            infrastructure-as-code, data sets/data generation, dependency management
+            and configuration, mocks, data generation, short-lived environments.
+          Purpose: >-
+            Real dependencies, similar/same technically to production. Composable
+            environments. Setting up and managing different environments for my
+            project is efficient and cheap.
+          maturitySignals:
+            - An environment for every change.
+
+        - ID: 1-data-storage
+          Name: Data & Storage
+          Definition: >-
+            Familiar, fit-for-purpose data storage solutions are available to suit
+            the organisation's obligations.
+          Purpose: >-
+            Opinionated self-service data solutions are available for the teams
+            across SQL, NoSQL, Blob/Bucket and Caching. Guidance and defaults are
+            in place for performance, reliability and data durability.
+          maturitySignals:
+            - The mean-time-to-restore is known for its primary services.
+            - Sharding or partitioning policies support the scale and regional context of the services.
+            - The team can independently manage Data migrations and schema changes.
+            - There is up-to-date documentation of schemas and associated privacy or security classifications.
+
+        - ID: 1-permissions-identity
+          Name: Permissions & Identity
+          Definition: >
+            The ability to create and manage accounts, credentials, roles and permissions for end users of
+            the product or service the team is responsible for.
+          Purpose: >
+            Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication
+            flows.
+          maturitySignals:
+            - The ability to script user generation or resets to help with integration test automation.
+
+        - ID: 1-local-dev
+          Name: Local Development & IDE
+          Definition: >
+            Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
+            test and run activities for the primary services they work on. Service-specific local setup (e.g. install
+            dependencies, mocks, test data). Correctly integrated AI in editors provides real-time code suggestions,
+            and style guidance, improving development learning, code quality and consistency.
+          Purpose: >
+            Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
+            associated licenses are readily available.
+          maturitySignals:
+            - IDE is setup consistent for new team members.
+            - Agreed coding conventions are codified in 'dot files' at machine or repository level.
+            - AI-assisted tools in the IDE are configured with codebase context rules
+            - AI routinely used to explain and suggest code, detect issues and enforce style and architecture standards.
+
         #  Old id was 1-observability
         - ID: 1-logging-monitoring
           Name: Logging & Monitoring
@@ -146,33 +152,32 @@ hierarchy:
             - We have familiar and effective ceremonies for planning and reviewing work and practices.
             - There is clear visibility on past and planned investments in features, service quality and productivity.
 
-        - ID: 1-permissions-identity
-          Name: Permissions & Identity
-          Definition: >
-            The ability to create and manage accounts, credentials, roles and permissions for end users of
-            the product or service the team is responsible for.
-          Purpose: >
-            Support for social logins, single sign-on, account verification and suspension. Multi-factor authentication
-            flows.
+        - ID: 1-work-backlog
+          Name: Work Backlog
+          Definition: >-
+            With a well-maintained backlog, the project team can effectively plan,
+            estimate and track progress, ensuring a steady flow of value delivery.
+          Purpose: >-
+            Prioritisation reflects a balance of business value, customer value,
+            team productivity and service performance.
           maturitySignals:
-            - The ability to script user generation or resets to help with integration test automation.
+            - The work backlog for my project is well-organised and prioritised.
+            - The backlog items are appropriately sized, ensuring efficient planning and task allocation.
 
-        - ID: 1-local-dev
-          Name: Local Development & IDE
-          Definition: >
-            Highly automated opinionated setup process gives developers a consistent baseline setup to support build,
-            test and run activities for the primary services they work on. Service-specific local setup (e.g. install
-            dependencies, mocks, test data). Correctly integrated AI in editors provides real-time code suggestions,
-            and style guidance, improving development learning, code quality and consistency.
-          Purpose: >
-            Provides a smooth and productive coding experience, with the necessary tools, libraries, frameworks and
-            associated licenses are readily available.
+        - ID: 1-version-control
+          Name: Version Control
+          Definition: >-
+            New repositories, teams and projects and permissions are created in
+            a consistent way.
+          Purpose: >-
+            Clear guidance on branching strategies implemented at the organisation
+            level. It is easy to track changes and support concurrent development
+            and rollback changes. Clear association between repository, team and
+            any deployed assets and overall project status.
           maturitySignals:
-            - IDE is setup consistent for new team members.
-            - Agreed coding conventions are codified in 'dot files' at machine or repository level.
-            - AI-assisted tools in the IDE are configured with codebase context rules
-            - AI routinely used to explain and suggest code, detect issues and enforce style and architecture standards.
-
+            - Guidance and examples exist for creating internal, partner and open source repositories.
+            - The removal of permissions for ex employees and contractors is automated.
+            - Branch protection rules are applied across repositories to ensure code quality, security and traceability.
         - ID: 1-compute
           Name: Compute
           Definition: >
@@ -231,6 +236,34 @@ hierarchy:
         for relative improvement within the group.
 
       needs:
+        - ID: 2-quality-engineering
+          Name: Quality Engineering
+          Definition: >
+            The tools and practices teams use to validate changes early and throughout the development lifecycle
+            continuously. The management of quality ensures controls are trusted and highly automated. It is familiar
+            and routine to maintain unit, contract and integration testing.
+          Purpose: >
+            Ensure main branch software is always in a releaseable state. Drive increasing automation of regression
+            testing.
+          maturitySignals:
+            - Green builds are safe to release without further inspection.
+            - Core workflows for each service are continually tested in production.
+
+        - ID: 2-deployment-solutions
+          Name: Deployment Solutions
+          Definition: >
+            For each component type the team supports, there is a standard workflow to build, test, publish artefacts
+            and deploy new versions. Build pipelines are highly automated, including promoting successful builds
+            across environments. The deployment solution also orchestrates supporting automation for
+            infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain
+            common build steps inherited across all builds (e.g., publishing, tagging, static analysis).
+          Purpose: >-
+            Promotes high-quality outcomes and continuous improvement. Vital integration point for compliance
+            and change control.
+          maturitySignals:
+            - A failed pipeline is unusual and demands attention after (60) minutes.
+            - Build capacity and speed is high enough to keep wait times under (10) minutes.
+
         - ID: 2-info-mgmt
           Name: Information Management
           Definition: >
@@ -264,33 +297,6 @@ hierarchy:
             - The level of compliance with standards is visible to all stakeholders across the organisation.
             - AI-assisted code, documentation and outputs are consistently reviewed for compliance and quality.
 
-        - ID: 2-on-call
-          Name: On-call
-          Definition: >
-            The on-call process is well-structured and familiar to all team members. Clear
-            escalation paths and expectations are documented. Handovers are acknowledged
-            and include a debrief on any closed or ongoing incidents.
-          Purpose: >
-            The team is competent and confident to respond to alerts or incidents.
-          maturitySignals:
-            - The appropriate people are available and contacted promptly to respond to alerts or incidents.
-            - Escalation paths are known and used.
-            - Expectations with responders are clear and respected for out-of-hours and holiday periods.
-            - Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
-
-        - ID: 2-quality-engineering
-          Name: Quality Engineering
-          Definition: >
-            The tools and practices teams use to validate changes early and throughout the development lifecycle
-            continuously. The management of quality ensures controls are trusted and highly automated. It is familiar
-            and routine to maintain unit, contract and integration testing.
-          Purpose: >
-            Ensure main branch software is always in a releaseable state. Drive increasing automation of regression
-            testing.
-          maturitySignals:
-            - Green builds are safe to release without further inspection.
-            - Core workflows for each service are continually tested in production.
-
         - ID: 2-continuous-integration
           Name: Continuous Integration
           Definition: >
@@ -306,19 +312,19 @@ hierarchy:
           maturitySignals:
             - Green-build confidence; Successful builds are safe deploy to production without further inspection.
             - At least one build per active contributor per day.
-        - ID: 2-security-controls
-          Name: Security Controls
+
+        - ID: 2-infrastructure-as-code
+          Name: Infrastructure as Code
           Definition: >
-            Tests and security controls are followed throughout the development lifecycle (design, build and run)
-            to help identify potential security issues. The security review process does not slow down the development
-            process for the primary systems the team works on. The team understands their security posture and
-            manages new issues in consultation with experts or a supporting team.
+            Infrastructure configurations are defined in code, enabling version control,
+            reproducibility and automated provisioning. The team manages workload infrastructure
+            creation, configuration, maintenance and deletion through source code change control.
           Purpose: >
-            To ensure that the team implements effective security controls throughout the development lifecycle,
-            protecting the product and its data from potential security threats.
+            Enforced change control for infrastructure. No bespoke environments (infrastructure and configuration).
           maturitySignals:
-            - The security review process does not slow down the development process.
-            - We understand our security posture & manage new issues in consultation with experts or a supporting team.
+            - Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
+            - All infrastructure changes are made through code change control.
+
         - ID: 2-alerting
           Name: Alerting
           Definition: >
@@ -336,20 +342,19 @@ hierarchy:
             - The team normally detect and raise an issue before the customer or stakeholder reports an issue.
             - Distributed tracing is enabled for all components.
             - There is correlation across signals for faster debugging.
-        - ID: 2-deployment-solutions
-          Name: Deployment Solutions
+
+        - ID: 2-delivery-metrics
+          Name: Delivery Metrics
           Definition: >
-            For each component type the team supports, there is a standard workflow to build, test, publish artefacts
-            and deploy new versions. Build pipelines are highly automated, including promoting successful builds
-            across environments. The deployment solution also orchestrates supporting automation for
-            infrastructure-as-code (IaC), configuration and secrets management. Central teams publish and maintain
-            common build steps inherited across all builds (e.g., publishing, tagging, static analysis).
-          Purpose: >-
-            Promotes high-quality outcomes and continuous improvement. Vital integration point for compliance
-            and change control.
+            Key metrics, such as throughput (lead time, cycle time, rework, wait time), and operational performance
+            (e.g. availability, latency, error rate, incidents) are regularly reviewed and used. These metrics provide
+            insights into delivery efficiency, predictability and capacity to deliver value. The team can and does
+            identify bottlenecks by analysing delivery metrics, optimising processes and continuously making
+            data-driven decisions to improve delivery performance.
+          Purpose: >
+            Establish a discipline of measurement to improve delivery, quality and operational performance.
           maturitySignals:
-            - A failed pipeline is unusual and demands attention after (60) minutes.
-            - Build capacity and speed is high enough to keep wait times under (10) minutes.
+            - We routinely make data-driven decisions with leadership to improve delivery and operational performance.
 
         - ID: 2-artefact-management
           Name: Artefact Management
@@ -366,30 +371,33 @@ hierarchy:
             - It is routine to publish logs and test artefacts according to their audit requirements.
             - There is a standard process for managing and distributing artefacts across the organisation.
 
-        - ID: 2-infrastructure-as-code
-          Name: Infrastructure as Code
+        - ID: 2-security-controls
+          Name: Security Controls
           Definition: >
-            Infrastructure configurations are defined in code, enabling version control,
-            reproducibility and automated provisioning. The team manages workload infrastructure
-            creation, configuration, maintenance and deletion through source code change control.
+            Tests and security controls are followed throughout the development lifecycle (design, build and run)
+            to help identify potential security issues. The security review process does not slow down the development
+            process for the primary systems the team works on. The team understands their security posture and
+            manages new issues in consultation with experts or a supporting team.
           Purpose: >
-            Enforced change control for infrastructure. No bespoke environments (infrastructure and configuration).
+            To ensure that the team implements effective security controls throughout the development lifecycle,
+            protecting the product and its data from potential security threats.
           maturitySignals:
-            - Cloud or data centre portals are used for diagnostics and learning but not for applying changes.
-            - All infrastructure changes are made through code change control.
+            - The security review process does not slow down the development process.
+            - We understand our security posture & manage new issues in consultation with experts or a supporting team.
 
-        - ID: 2-delivery-metrics
-          Name: Delivery Metrics
+        - ID: 2-on-call
+          Name: On-call
           Definition: >
-            Key metrics, such as throughput (lead time, cycle time, rework, wait time), and operational performance
-            (e.g. availability, latency, error rate, incidents) are regularly reviewed and used. These metrics provide
-            insights into delivery efficiency, predictability and capacity to deliver value. The team can and does
-            identify bottlenecks by analysing delivery metrics, optimising processes and continuously making
-            data-driven decisions to improve delivery performance.
+            The on-call process is well-structured and familiar to all team members. Clear
+            escalation paths and expectations are documented. Handovers are acknowledged
+            and include a debrief on any closed or ongoing incidents.
           Purpose: >
-            Establish a discipline of measurement to improve delivery, quality and operational performance.
+            The team is competent and confident to respond to alerts or incidents.
           maturitySignals:
-            - We routinely make data-driven decisions with leadership to improve delivery and operational performance.
+            - The appropriate people are available and contacted promptly to respond to alerts or incidents.
+            - Escalation paths are known and used.
+            - Expectations with responders are clear and respected for out-of-hours and holiday periods.
+            - Handovers are acknowledged and include a debrief on any closed or ongoing incidents.
 
     - level: 3
       name: Effective Ownership
@@ -405,105 +413,6 @@ hierarchy:
         is accountable for the full ownership of their services
         and has autonomy within boundaries to reach strategic outcomes.
       needs:
-        - ID: 3-helpers-templates-accelerators
-          Name: Templates & Golden Paths
-          Definition: >
-            A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent
-            implementation of best practices across our common component types. Component / Project templates implement
-            blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine
-            templates into workflows to scaffold, build, test and deploy new services in under an hour. AI learns
-            from past projects and existing codebases to dynamically help boot strap and accelerate development.
-          Purpose: >
-            Automated standardisation of agreed best practices and compliance across common component types.
-          maturitySignals:
-            - New components or projects can be created and deployed to production in under an hour.
-            - Regular contributions to the shared templates and accelerators from Communities of Practice.
-            - It is easy to transfer ownership of components or projects between teams.
-            - AI is used to assist in generating, evolving templates and accelerate new component development.
-        - ID: 3-compliance-as-code
-          Name: Compliance as Code
-          Definition: >
-            My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to
-            regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during
-            the development and deployment process. By treating compliance as code, the team can efficiently implement
-            and maintain compliance controls, reducing human error, enhancing auditability and minimising the time and
-            effort required to maintain regulatory compliance.
-          Purpose: >
-            To ensure that the team incorporates compliance requirements as code, automating compliance checks and
-            ensuring adherence to regulatory standards.
-          maturitySignals:
-            - Audit-related requests for information are straightforward and largely self-serve.
-            - We incorporate compliance requirements as code, automating checks for adherence to compliance & standards.
-        - ID: 3-incident-mgmt
-          Name: Incident Management
-          Definition: >
-            The incident management process on my product is robust and well-structured, enabling swift response and
-            minimising the impact of incidents. The team follows established incident response procedures, including
-            incident identification, communication, prioritisation and resolution. Clear roles and responsibilities
-            are defined, ensuring effective coordination and collaboration during incident handling.
-          Purpose: >
-            Team is competent and confident to respond to inevitable incidents.
-          maturitySignals:
-            - Incidents are raised and resolved regularly and without panic.
-            - Incidents are lead by a variety of individuals.
-            - Interesting incidents are investigated and knowledge is shared with leadership and other teams.
-        #  Old id was 3-quality-of-service
-        - ID: 3-service-metrics
-          Name: Service Metrics
-          Definition: >
-            Maintaining a clear view of service health from the user's
-            perspective. Key user journies and actions are defined and measured.
-            Service level objectives (SLOs) service level indicators (SLIs)
-            are reviewed at regular intervals. These SLOs and SLIs define
-            synthetic tests of primary workflows and key metrics, such as
-            response time, availability and error rates.
-          Purpose: >
-            The team can monitor the product's performance against established
-            benchmarks or expectations of stakeholders and users.
-          maturitySignals:
-            - The team is aware of a baseline level of performance for their key services over the past 3-6 months.
-            - Noisy errors and alerts are actively managed and reduced.
-
-        - ID: 3-apis-sdks
-          Name: APIs & SDKs
-          Definition: >
-            The team provides well-designed APIs and software development kits (SDKs) that facilitate integration
-            and extensibility. The APIs offer clear documentation, well-defined contracts and consistent interfaces,
-            enabling seamless interaction with the product's services and functionalities. The SDKs provide
-            comprehensive tooling, libraries and code examples, simplifying the development process for external
-            and internal consumers. Internal publishers support fake or mock implementations of their APIs to help
-            consuming teams automate testing.
-          Purpose: To ensure that the team provides well-designed APIs and software development kits (SDKs) that
-            facilitate integration and extensibility.
-          maturitySignals:
-            - Well-designed APIs and SDKs support integration and extensibility.
-            - APIs have clear documentation, contracts and interfaces.
-            - SDKs include tooling, libraries, code examples and support for mock implementations.
-        - ID: 3-eventing
-          Name: Eventing
-          Definition: >
-            The ability to coordinate functionality across distributed systems and services using events.
-            Common conventions to publish system and user events for analytics and observability.
-          Purpose: >
-            Customer solutions and analytics can be implemented as composable, extendable and highly decoupled
-            implementations. Increased team decoupling and independence.
-          maturitySignals:
-            - Standard patterns, SDKs and tooling to publish, store, subscribe and consume events.
-            - Schema validation is in place to block foreign or malformed events.
-        - ID: 3-static-analysis
-          Name: Static Analysis
-          Definition: >
-            The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities,
-            and maintain code quality standards. These tools automatically analyse code, check for common programming
-            errors and enforce coding conventions. Tools run locally and as part of automated builds to detect and
-            resolve new issues as early as possible. Data on software composition & supply chain is available centrally
-            to manage licensing and security vulnerability risk.
-          Purpose: >
-            Proactively detect and resolve code issues, potential vulnerabilities and enforce coding conventions.
-          maturitySignals:
-            - Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
-            - Detected issues are triaged by team members regularly.
-            - Security and Quality representatives curate filters and criteria.
         - ID: 3-aligned-accountability
           Name: Aligned Accountability
           Definition: >
@@ -524,6 +433,112 @@ hierarchy:
             - Decisions are made collaboratively within these clear boundaries.
             - Delivery practices and responsibilities are team-owned.
             - The team reflects, improves together and strives to learn fast from failure.
+
+        - ID: 3-helpers-templates-accelerators
+          Name: Templates & Golden Paths
+          Definition: >
+            A comprehensive set of helpers, templates and accelerators that expedite development and ensure consistent
+            implementation of best practices across our common component types. Component / Project templates implement
+            blueprints in preferred architectures, coding conventions and engineering standards. Accelerators combine
+            templates into workflows to scaffold, build, test and deploy new services in under an hour. AI learns
+            from past projects and existing codebases to dynamically help boot strap and accelerate development.
+          Purpose: >
+            Automated standardisation of agreed best practices and compliance across common component types.
+          maturitySignals:
+            - New components or projects can be created and deployed to production in under an hour.
+            - Regular contributions to the shared templates and accelerators from Communities of Practice.
+            - It is easy to transfer ownership of components or projects between teams.
+            - AI is used to assist in generating, evolving templates and accelerate new component development.
+
+        - ID: 3-compliance-as-code
+          Name: Compliance as Code
+          Definition: >
+            My team incorporates compliance requirements as code, automating compliance checks and ensuring adherence to
+            regulatory standards. Compliance rules and checks are codified, allowing for automated enforcement during
+            the development and deployment process. By treating compliance as code, the team can efficiently implement
+            and maintain compliance controls, reducing human error, enhancing auditability and minimising the time and
+            effort required to maintain regulatory compliance.
+          Purpose: >
+            To ensure that the team incorporates compliance requirements as code, automating compliance checks and
+            ensuring adherence to regulatory standards.
+          maturitySignals:
+            - Audit-related requests for information are straightforward and largely self-serve.
+            - We incorporate compliance requirements as code, automating checks for adherence to compliance & standards.
+
+        - ID: 3-incident-mgmt
+          Name: Incident Management
+          Definition: >
+            The incident management process on my product is robust and well-structured, enabling swift response and
+            minimising the impact of incidents. The team follows established incident response procedures, including
+            incident identification, communication, prioritisation and resolution. Clear roles and responsibilities
+            are defined, ensuring effective coordination and collaboration during incident handling.
+          Purpose: >
+            Team is competent and confident to respond to inevitable incidents.
+          maturitySignals:
+            - Incidents are raised and resolved regularly and without panic.
+            - Incidents are lead by a variety of individuals.
+            - Interesting incidents are investigated and knowledge is shared with leadership and other teams.
+
+        - ID: 3-apis-sdks
+          Name: APIs & SDKs
+          Definition: >
+            The team provides well-designed APIs and software development kits (SDKs) that facilitate integration
+            and extensibility. The APIs offer clear documentation, well-defined contracts and consistent interfaces,
+            enabling seamless interaction with the product's services and functionalities. The SDKs provide
+            comprehensive tooling, libraries and code examples, simplifying the development process for external
+            and internal consumers. Internal publishers support fake or mock implementations of their APIs to help
+            consuming teams automate testing.
+          Purpose: To ensure that the team provides well-designed APIs and software development kits (SDKs) that
+            facilitate integration and extensibility.
+          maturitySignals:
+            - Well-designed APIs and SDKs support integration and extensibility.
+            - APIs have clear documentation, contracts and interfaces.
+            - SDKs include tooling, libraries, code examples and support for mock implementations.
+
+        - ID: 3-eventing
+          Name: Eventing
+          Definition: >
+            The ability to coordinate functionality across distributed systems and services using events.
+            Common conventions to publish system and user events for analytics and observability.
+          Purpose: >
+            Customer solutions and analytics can be implemented as composable, extendable and highly decoupled
+            implementations. Increased team decoupling and independence.
+          maturitySignals:
+            - Standard patterns, SDKs and tooling to publish, store, subscribe and consume events.
+            - Schema validation is in place to block foreign or malformed events.
+
+        #  Old id was 3-quality-of-service
+        - ID: 3-service-metrics
+          Name: Service Metrics
+          Definition: >
+            Maintaining a clear view of service health from the user's
+            perspective. Key user journies and actions are defined and measured.
+            Service level objectives (SLOs) service level indicators (SLIs)
+            are reviewed at regular intervals. These SLOs and SLIs define
+            synthetic tests of primary workflows and key metrics, such as
+            response time, availability and error rates.
+          Purpose: >
+            The team can monitor the product's performance against established
+            benchmarks or expectations of stakeholders and users.
+          maturitySignals:
+            - The team is aware of a baseline level of performance for their key services over the past 3-6 months.
+            - Noisy errors and alerts are actively managed and reduced.
+
+        - ID: 3-static-analysis
+          Name: Static Analysis
+          Definition: >
+            The team integrates static analysis tools that effectively identify code issues, potential vulnerabilities,
+            and maintain code quality standards. These tools automatically analyse code, check for common programming
+            errors and enforce coding conventions. Tools run locally and as part of automated builds to detect and
+            resolve new issues as early as possible. Data on software composition & supply chain is available centrally
+            to manage licensing and security vulnerability risk.
+          Purpose: >
+            Proactively detect and resolve code issues, potential vulnerabilities and enforce coding conventions.
+          maturitySignals:
+            - Tools run locally and as part of automated builds to detect and resolve new issues as early as possible.
+            - Detected issues are triaged by team members regularly.
+            - Security and Quality representatives curate filters and criteria.
+
     - level: 4
       name: Sustainability
       description: >
@@ -548,6 +563,7 @@ hierarchy:
           maturitySignals:
             - High degree of release controls (e.g. feature flags) to safely deploy partially implemented features.
             - High maturity alerting, quality of service and incident management to detect and revert problem changes.
+
         - ID: 4-product-metrics
           Name: Product Metrics
           Definition: >
@@ -561,6 +577,7 @@ hierarchy:
             - User events and flows are well-documented and accessible to all teams.
             - Event processing filters activity from automated testing.
             - AI-driven insights are regularly reviewed to guide product strategy and prioritisation.
+
         - ID: 4-experimentation
           Name: Experimentation
           Definition: >
@@ -573,6 +590,7 @@ hierarchy:
           maturitySignals:
             - The team can run multiple experiments in parallel.
             - Significant system changes can be safely tested in production.
+
         - ID: 4-career-growth
           Name: Career Growth
           Definition: >
@@ -620,6 +638,7 @@ hierarchy:
             - Leaders respond with support and curiosity.
             - Quality, reliability and availability are embraced as a team responsibility, not siloed.
             - Novel ideas are welcomed & implemented, teams have permission & mechanisms to explore improvements.
+
         - ID: 5-governance
           Name: Governance & Standardisation
           Definition: >
@@ -669,7 +688,7 @@ hierarchy:
             Balancing value generation with value protection.
             Maintain or improve service reliability and user experience
             over time, anticipating issues before customers notice.
-            Moves SLIs/SLOs from “measurement only” to a driver for
+            Moves SLIs/SLOs from "measurement only" to a driver for
             decision-making. Ability to recover from disasters.
           maturitySignals:
             - High-stakes company events proceed without restrictions on deployments.
