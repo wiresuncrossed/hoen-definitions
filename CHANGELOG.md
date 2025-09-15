@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added AI concepts to indivudal needs
 - People and Purpose ```1-people-purpose```
 - Operating Rhythms ```1-operating-rhythms```
+- Reorder Needs
 
 
 ### Removed
