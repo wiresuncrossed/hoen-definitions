@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Aligned Accountability ```3-aligned-accountability```
 - Generative Culture ```5-generative-culture```
 - Quality of Service ```5-quality-of-service```
-- Value Generation ```5-value-generation``
+- Value Generation ```5-value-generation```
 
 ### Changed
 - Continuous Integration definition changed and moved from level 3 to 2.  ```2-continuous-integration```
